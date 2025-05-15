@@ -95,161 +95,18 @@
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-8">
+        <div class="col-lg-12">
           <div class="row">
 
             <?php  include('../components/box.php');  ?>
             <!-- End Customers Card -->
 
-            <!-- Recent Sales -->
-            <div class="col-12">
-              <div class="card recent-sales overflow-auto">
-
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Login  <span>| History</span></h5>
-
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">IP</th>
-                        <th scope="col">USERNAME</th>
-                        <th scope="col">COUNTRY</th>
-                        <th scope="col">DATE</th>
-                        
-                      </tr>
-                    </thead>
-                    <tbody>
-
-
-                      <?php
-
-                            $id = $_SESSION['admin'];
-                            $query = mysqli_query($connection,"SELECT * FROM `history`");
-
-                            if (mysqli_num_rows($query) > 0){
-                              $count = 0 ;
-                              while($details = mysqli_fetch_assoc($query)){ $count++?>
-
-                                  <tr>
-                                    <th scope="row"><a href="#"><?php echo $count;; ?></a></th>
-                                    <td><?php echo $details['ip']; ?></td>
-                                    <td><a href="#" class="text-primary"><?php echo $details['username']; ?></a></td>
-                                    <td><?php echo $details['country']; ?></td>
-                                    <td><?php echo $details['date']; ?></td>
-                                    <td><a href="?del=<?php echo $details['id'];  ?>"><span class="badge" style="background-color:red;">Delete</span></a></td>
-                                    
-                                  </tr>
-
-
-                            <?php  }
-
-                            }
-                      
-                      ?>
-
-
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Recent Sales -->
-
+     
 
 
           </div>
         </div>
-        <!-- Right side columns -->
-        <div class="col-lg-4">
 
-
-
-          <!-- Budget Report -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
-              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
-                    legend: {
-                      data: ['Allocated Budget', 'Actual Spending']
-                    },
-                    radar: {
-                      // shape: 'circle',
-                      indicator: [{
-                          name: 'Sales',
-                          max: 6500
-                        },
-                        {
-                          name: 'Administration',
-                          max: 16000
-                        },
-                        {
-                          name: 'Information Technology',
-                          max: 30000
-                        },
-                        {
-                          name: 'Customer Support',
-                          max: 38000
-                        },
-                        {
-                          name: 'Development',
-                          max: 52000
-                        },
-                        {
-                          name: 'Marketing',
-                          max: 25000
-                        }
-                      ]
-                    },
-                    series: [{
-                      name: 'Budget vs spending',
-                      type: 'radar',
-                      data: [{
-                          value: [4200, 3000, 20000, 35000, 50000, 18000],
-                          name: 'Allocated Budget'
-                        },
-                        {
-                          value: [5000, 14000, 28000, 26000, 42000, 21000],
-                          name: 'Actual Spending'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Budget Report -->
-
-
-          
-
-
-
-        </div><!-- End Right side columns -->
 
       </div>
     </section>

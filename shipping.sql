@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: May 14, 2025 at 07:41 PM
--- Server version: 8.0.41-cll-lve
--- PHP Version: 8.1.27
+-- Host: 127.0.0.1
+-- Generation Time: May 15, 2025 at 09:23 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `minance_<?php echo  $sitename ?>`
+-- Database: `shipping`
 --
 
 -- --------------------------------------------------------
@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `admin`
@@ -48,11 +48,11 @@ INSERT INTO `admin` (`username`, `email`, `password`, `id`) VALUES
 --
 
 CREATE TABLE `bills` (
-  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `track` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `amount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `description` varchar(255) NOT NULL,
+  `track` varchar(255) NOT NULL,
+  `amount` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `bills`
@@ -64,7 +64,8 @@ INSERT INTO `bills` (`description`, `track`, `amount`, `id`) VALUES
 ('Airport Dispatch Fee: $1850.00       •     Expedited Shipping Fee:  $1350.00 	•	Local Delivery Fee: $800.00 	•	Total Amount Due: $4000.00', 'FAC6867760522', '$4,000', 3),
 ('Pending Charges:   Airport dispatch costs / local delivery ', 'FAC04522541101', '€1,750 ', 4),
 ('Pending Charges:   Airport dispatch costs / local delivery', 'FAC5328504193', '$1,950', 5),
-('Airport clearance and Local delivery ', 'FAC6393790572', '$4,169', 6);
+('Airport clearance and Local delivery ', 'FAC6393790572', '$4,169', 6),
+('for security', 'FAC1588233610', '100', 7);
 
 -- --------------------------------------------------------
 
@@ -73,28 +74,24 @@ INSERT INTO `bills` (`description`, `track`, `amount`, `id`) VALUES
 --
 
 CREATE TABLE `details` (
-  `track` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `insurance` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `weight` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `paid_fee` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `total_fee` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `status` enum('arrived','on transit','stop') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `destination` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `current_country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `shippment_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `arrival_date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `message` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `track` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `weight` varchar(255) NOT NULL,
+  `paid_fee` varchar(255) NOT NULL,
+  `total_fee` varchar(255) NOT NULL,
+  `status` enum('arrived','on transit','stop') NOT NULL,
+  `destination` varchar(255) NOT NULL,
+  `current_country` varchar(255) NOT NULL,
+  `shippment_date` varchar(255) NOT NULL,
+  `arrival_date` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `details`
 --
 
-INSERT INTO `details` (`track`, `description`, `insurance`, `weight`, `paid_fee`, `total_fee`, `status`, `destination`, `current_country`, `shippment_date`, `arrival_date`, `message`) VALUES
-('FAC0222201101', ' Package ', 'We always make sure your boxes get to your doorstep ', '18kg', '1000', '1000', 'stop', 'Switzerland', 'Poland', '2024-07-02', '2024-07-07', 'Your luggage is in a good condition and we are going to contact you once your luggage has arrived in Switzerland( Thank You )'),
-('FAC6027307884', ' Package ', 'We always make sure your boxes get to your doorstep', '8.9kg ', 'International shipping fee ($6,215) has been paid ', '$6,215', 'on transit', 'United States', 'Switzerland', '2025-03-28', '2025-03-31', 'Your package is in a good condition we are going to contact you once your luggage has arrived in USA ( Thank You )'),
-('FAC6393790572', '  Package ', 'We always make sure your package  get to your doorstep', '0.9', 'International shipping fee ($3210) ', '($3210) ', 'arrived', 'Mexico', 'United States', '2025-04-21', '2025-04-24', 'Airport clearance fee: $2955 - Local delivery fee: $1205');
+INSERT INTO `details` (`track`, `description`, `weight`, `paid_fee`, `total_fee`, `status`, `destination`, `current_country`, `shippment_date`, `arrival_date`) VALUES
+('FAC1588233610', ' phone and laptop goods', '100', '500', '2000', 'on transit', 'Afghanistan', 'Afghanistan', '2025-05-15', '2025-05-23');
 
 -- --------------------------------------------------------
 
@@ -103,12 +100,12 @@ INSERT INTO `details` (`track`, `description`, `insurance`, `weight`, `paid_fee`
 --
 
 CREATE TABLE `history` (
-  `ip` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `ip` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `history`
@@ -143,7 +140,8 @@ INSERT INTO `history` (`ip`, `country`, `username`, `date`, `id`) VALUES
 ('198.98.183.43', 'US', 'pablo', '2025-04-10 18:11:00', 26),
 ('102.91.35.180', 'NG', 'pablo', '2025-04-10 18:57:25', 27),
 ('102.91.35.180', 'NG', 'pablo', '2025-04-12 12:06:24', 28),
-('102.91.35.180', 'Country not found', 'pablo', '2025-04-21 16:38:10', 29);
+('102.91.35.180', 'Country not found', 'pablo', '2025-04-21 16:38:10', 29),
+('::1', 'Country not found', 'pablo', '2025-05-15 08:44:26', 30);
 
 -- --------------------------------------------------------
 
@@ -152,12 +150,12 @@ INSERT INTO `history` (`ip`, `country`, `username`, `date`, `id`) VALUES
 --
 
 CREATE TABLE `stages` (
-  `track` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `status` enum('current','previouse') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `date` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `track` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `status` enum('current','previouse') NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `stages`
@@ -195,7 +193,8 @@ INSERT INTO `stages` (`track`, `country`, `status`, `date`, `id`) VALUES
 ('FAC5328504193', 'Madagascar ', 'current', '2025-04-12', 31),
 ('FAC6393790572', 'USA', 'previouse', '2025-04-21', 32),
 ('FAC6393790572', 'Mexico ', 'previouse', '2025-04-23', 33),
-('FAC6393790572', 'Mexico City ', 'current', '2025-04-24', 34);
+('FAC6393790572', 'Mexico City ', 'current', '2025-04-24', 34),
+('FAC6393790572', 'Nigeria', 'current', '2025-05-16', 35);
 
 -- --------------------------------------------------------
 
@@ -204,28 +203,26 @@ INSERT INTO `stages` (`track`, `country`, `status`, `date`, `id`) VALUES
 --
 
 CREATE TABLE `user` (
-  `sender_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `sender_email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `sender_phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `sender_country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `sender_address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `receiver_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `receiver_email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `receiver_phone` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `receiver_country` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `receiver_address` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `id` int NOT NULL,
-  `track` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `sender_name` varchar(255) NOT NULL,
+  `sender_email` varchar(255) NOT NULL,
+  `sender_phone` varchar(255) NOT NULL,
+  `sender_country` varchar(255) NOT NULL,
+  `sender_address` varchar(255) NOT NULL,
+  `receiver_name` varchar(255) NOT NULL,
+  `receiver_email` varchar(255) NOT NULL,
+  `receiver_phone` varchar(255) NOT NULL,
+  `receiver_country` varchar(255) NOT NULL,
+  `receiver_address` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL,
+  `track` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`sender_name`, `sender_email`, `sender_phone`, `sender_country`, `sender_address`, `receiver_name`, `receiver_email`, `receiver_phone`, `receiver_country`, `receiver_address`, `id`, `track`) VALUES
-('EliteCapital', 'Nill', 'Nill', 'United States', 'USA', 'FOO THEAM YOO', 'kfoo@epost.ch', ' +41764121589', 'Switzerland', 'IM DOERNLER 7, 8602 WANGEN ZH, ZURICH, SWITZERLAND', 2, 'FAC0222201101'),
-('Jason Lewis', 'realjasonlee33@gmail.com', 'Nil ', 'Switzerland', 'Altstadt ,Zurich, Switzerland.', 'Ana Maria De Leon', 'anadeleon043006@gmail.com', ' 262)893-1832', 'United States', '10619 N county line Rd lot #58 Whitewater WI 53190 (USA)', 7, 'FAC6027307884'),
-('Greenshieldfine', 'contact@greenshieldfine.com', 'Nill', 'United States', 'USA', ' Andres hernandez juarez  ', ' andresh2498706@gmail.com', ' +52 2212035928', 'Mexico', ' Calle Huasteca 1 B, entre Chicana y circuito manicoba, colonia Bello Horizonte C.P 72735 tel 2212035928, a cien metros colegio Saleciano Progreso, frente a campo Xelhua.', 15, 'FAC6393790572');
+('Ezea Ugochukwu', 'spotwebdev.com@gmail.com', '08108833188', 'Nigeria', 'mtd gariki', ' repented', ' repented@gmail.com', ' 678903984', 'United States', ' new york', 17, 'FAC1588233610');
 
 --
 -- Indexes for dumped tables
@@ -275,31 +272,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `bills`
 --
 ALTER TABLE `bills`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `history`
 --
 ALTER TABLE `history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `stages`
 --
 ALTER TABLE `stages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
