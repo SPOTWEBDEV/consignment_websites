@@ -45,16 +45,12 @@ include('../../saver/authorization.php'); ?>
 
     ?>
 
-        <main class="container invoice-wrapper" id="download-section">
-            <!-- invoice Top -->
-            <div class="invoice-top">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center text-sm-start mb-3 mb-sm-1">
-                        <a href="index.html"><img src="../../assets/images/logo2.png" title="invoice" alt="invoice"></a>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center text-sm-end mb-3 mb-sm-1">
-                        <h4 class="text-30 mb-0 mt-0">Invoice</h4>
-                    </div>
+    <main class="container invoice-wrapper" id="download-section">
+        <!-- invoice Top -->
+        <div class="invoice-top">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center text-sm-start mb-3 mb-sm-1">
+                    <a href="index.html"><img style="height: 85px;" src="<?php  echo $domain ?>assets/images/logo_2.png" title="invoice" alt="invoice"></a>
                 </div>
                 <hr>
                 <div class="col-sm-6"><strong>Note:</strong> for enquires for any kind of issues contact<strong>:</strong> <br><?php echo  $siteemail ?> <br>+1 (206) 638-3417 <br> </div>

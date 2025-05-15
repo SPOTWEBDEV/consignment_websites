@@ -5,7 +5,7 @@
                     <div class="container">
                         <div class="main-header-two__top-details-inner">
                             <div class="main-header-two__logo">
-                                <a href="index-2.html"><img src="assets/images/logo.png" alt="logo"></a>
+                                <a href=""><img style="height: 85px;" src="assets/images/logo.png" alt="logo"></a>
                             </div>
                             <ul class="list-unstyled main-header-two__top-details-list">
                                  <li>

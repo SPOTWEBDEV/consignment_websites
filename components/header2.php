@@ -30,9 +30,7 @@
                                     <li><a href="about.php">About</a></li>
                                 </ul>
                             </div>
-                            <div class="main-header__top-social-box">
-                         
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -43,7 +41,7 @@
                         <div class="main-menu-three__wrapper-inner clearfix">
                             <div class="main-menu-three__left">
                                 <div class="main-menu-three__logo">
-                                    <a href="index-2.html"><img src="assets/images/logo.png" alt="logo"></a>
+                                    <a href=""><img style="height: 85px;"  src="assets/images/logo_2.png" alt="logo"></a>
                                 </div>
                                 <div class="main-menu-three__main-menu-box">
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
