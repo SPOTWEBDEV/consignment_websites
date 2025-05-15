@@ -39,11 +39,11 @@ if ($isLocalhost) {
     }
 } else {
     // Online (Live Server)
-    $domain = "http://localhost/consignment_websites/";
+    $domain = "http://upsnlt.com/";
 
-    define("USER", "quanstof_bustax");
-    define("PASSWORD", "quanstof_bustax");
-    define("DATABASE", "quanstof_bustax");
+    define("USER", "bencofas_shipping");
+    define("PASSWORD", "bencofas_shipping");
+    define("DATABASE", "bencofas_shipping");
 
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
