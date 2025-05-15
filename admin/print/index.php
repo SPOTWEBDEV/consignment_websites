@@ -12,7 +12,7 @@
     <meta name="keywords" content="bill , receipt, tally, invoice, cash memo, invoice html, invoice pdf, invoice print, invoice templates, multipurpose invoice, template, booking invoice, general invoice, clean invoice, catalog, estimate, proposal">
     <meta name="author" content="initTheme">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Acestackhub Shipment Invoice </title>
+	<title><?php echo  $sitename ?> Shipment Invoice </title>
     <link rel="icon" type="image/x-icon" sizes="20x20" href="assets/images/icon/favicon.png">
     
     <!-- Style -->
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <hr>
-            <div class="col-sm-6"><strong>Note:</strong> for enquires for any kind of issues contact<strong>:</strong> <br>support@acestackhub.com <br>+1 (206) 638-3417 <br> </div>
+            <div class="col-sm-6"><strong>Note:</strong> for enquires for any kind of issues contact<strong>:</strong> <br>support@<?php echo  $sitename ?>.com <br>+1 (206) 638-3417 <br> </div>
             <hr>
             <div class="row">
                 <div class="col-sm-6"><strong>Date:</strong> <?php  echo $info['shippment_date'] ?></div>

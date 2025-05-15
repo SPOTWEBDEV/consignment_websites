@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<?php include('./saver/connection.php') ?>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -12,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
-    <title>acestackhub |  About Us </title>
+    <title><?php echo  $sitename ?> |  About Us </title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -710,7 +711,7 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@acestackhub.com">support@acestackhub.com</a>
+                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>

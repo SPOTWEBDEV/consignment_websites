@@ -72,7 +72,7 @@
                                             <span class="icon-email"></span>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:support@acestackhub.com">support@acestackhub.com</a></p>
+                                            <p><a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a></p>
                                         </div>
                                     </li>
                                     <li>

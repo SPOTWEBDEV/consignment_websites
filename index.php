@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+﻿<?php include('./saver/connection.php') ?>
+<!DOCTYPE html>
 <html lang="en">
 
 
 
-<!-- Mirrored from thetestingstudio.com/acestackhub/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:04 GMT -->
+<!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:04 GMT -->
 <head>
      <!-- Responsive -->
     <meta charset="UTF-8">
@@ -11,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="logistics, air freight, sea freight, road Freight, Transportaion, shipping, cargo, port, supply chain, Temperature Cargo, Warehouse, custom clearance">
     <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
-    <title>acestackhub - Transportaion and logistic company </title>
+    <title><?php echo  $sitename ?> -- Home</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -1367,7 +1368,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@acestackhub.com">support@acestackhub.com</a>
+                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
@@ -1457,5 +1458,5 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 
-<!-- Mirrored from thetestingstudio.com/acestackhub/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:05 GMT -->
+<!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:05 GMT -->
 </html>

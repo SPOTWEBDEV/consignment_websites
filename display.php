@@ -1,5 +1,5 @@
 <?php
-include('saver/connection.php');
+include('./saver/connection.php');
 $url = $domain . 'track.php';
 if (isset($_GET['track']) && $_GET['track'] != "") {
     $track = $_GET['track'];
@@ -37,7 +37,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="logistics, air freight, sea freight, road Freight, Transportaion, shipping, cargo, port, supply chain, Temperature Cargo, Warehouse, custom clearance">
     <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
-    <title> acestackhub - details </title>
+    <title> <?php echo  $sitename ?> - details </title>
 
     <!-- favicon -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -619,7 +619,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@acestackhub.com">support@acestackhub.com</a>
+                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>

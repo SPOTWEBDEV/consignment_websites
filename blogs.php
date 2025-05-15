@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<?php include('./saver/connection.php') ?>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -10,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="logistics, air freight, sea freight, road Freight, Transportaion, shipping, cargo, port, supply chain, Temperature Cargo, Warehouse, custom clearance">
     <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
-    <title>acestackhub - blog </title>
+    <title><?php echo  $sitename ?> - blog </title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -338,7 +339,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@acestackhub.com">support@acestackhub.com</a>
+                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
