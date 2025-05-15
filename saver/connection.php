@@ -30,7 +30,7 @@ if ($isLocalhost) {
 
     define("USER", "root");
     define("PASSWORD", "");
-    define("DATABASE", "bustax");
+    define("DATABASE", "shipping");
 
     // Database connection
     $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
@@ -54,7 +54,8 @@ if ($isLocalhost) {
 
 
 $siteshort = 'UPSIL';
-$sitename = 'United parcel service international Limited';
+$sitename = 'United Parcel Service International Limited';
+$siteemail = 'support@unitedparcel.com'
 
 
 

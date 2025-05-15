@@ -23,7 +23,7 @@
                                     </div>
                                     <div class="text">
                                         <h5>Email Us</h5>
-                                        <p><a href="mailto:demo@example.com">support@<?php echo  $sitename ?>.com</a></p>
+                                        <p><a href="mailto:demo@example.com"><?php echo $siteemail ?></a></p>
                                     </div>
                                 </li>
                                <li>

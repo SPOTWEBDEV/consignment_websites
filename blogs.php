@@ -100,9 +100,7 @@
                                         <div class="blog-desc">
                                             Supply Chain Management is the management of the flow of goods and services, including the movement and storage of raw materials, work-in-process inventory, and finished goods, from the point of origin to the point of consumption.  
                                         </div>
-                                        <div class="blog-button">
-                                            <a class="blog-btn" href="blog-details.html">Read More...</a>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -137,9 +135,7 @@
                                         <div class="blog-desc">
                                             Selecting the right logistics partner is crucial for the smooth operation of your supply chain and can significantly impact your overall business performance. Here are key factors to consider when choosing a logistics partner.
                                         </div>
-                                        <div class="blog-button">
-                                            <a class="blog-btn" href="blog-details.html">Read More...</a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -174,9 +170,7 @@
                                         <div class="blog-desc">
                                            Technology plays a pivotal role in transforming and optimizing the logistics industry, enhancing efficiency, visibility, and overall supply chain management.
                                         </div>
-                                        <div class="blog-button">
-                                            <a class="blog-btn" href="blog-details.html">Read More...</a>
-                                        </div>
+                                       
                                     </div>
                                 </div>
                             </div>

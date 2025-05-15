@@ -17,7 +17,7 @@
                                         <span class="icon-email"></span>
                                     </i>
                                     <div class="text">
-                                        <p><a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a></p>
+                                        <p><a href=""><?php echo $siteemail ?></a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -26,17 +26,12 @@
                             <div class="main-header__top-menu-box">
                                 <ul class="list-unstyled main-header__top-menu">
                                     <li><a href="tracking.php">Tracking</a></li>
-                                    <li><a href=""> FAQs</a></li>
+                                    <li><a href="faq.php"> FAQs</a></li>
                                     <li><a href="about.php">About</a></li>
                                 </ul>
                             </div>
                             <div class="main-header__top-social-box">
-                                <div class="main-header__top-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
+                         
                             </div>
                         </div>
                     </div>
@@ -64,6 +59,10 @@
                                         </li>
                                          <li class="dropdown">
                                             <a href="blogs.php">Blogs</a>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a href="faq.php">FAQ</a>
                                         </li>
                                      
                                     </ul>

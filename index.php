@@ -5,8 +5,9 @@
 
 
 <!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:04 GMT -->
+
 <head>
-     <!-- Responsive -->
+    <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +18,14 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-   
 
-         <!-- css styles -->
+
+    <!-- css styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive-style.css">
-    
 
-    
+
+
 </head>
 
 <body class="custom-cursor">
@@ -42,7 +43,7 @@
 
     <div class="page-wrapper">
 
-        <?php  include('components/header.php')  ?>
+        <?php include('components/header.php')  ?>
 
         <div class="stricky-header stricked-menu main-menu main-menu-two">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -86,7 +87,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -110,7 +111,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -134,7 +135,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -155,7 +156,7 @@
         </section>
         <!--Main Slider End-->
 
-   <section class="about-five">
+        <section class="about-five">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -168,7 +169,7 @@
                                 <div class="about-five__img-two">
                                     <img src="assets/images/about/circle1.jpg" alt="">
                                 </div>
-                               <div class="about-one__experience">
+                                <div class="about-one__experience">
                                     <h2 class="about-one__experience-year">25+</h2>
                                     <p class="about-one__experience-text">Years of <br> Experience</p>
                                 </div>
@@ -183,14 +184,14 @@
                         <div class="about-five__right">
                             <div class="section-title-two text-left">
                                 <div class="section-sub-title-box">
-                                        <p class="section-sub-title">About Us</p>
-                                        <div class="section-title-shape-1">
-                                            <img src="assets/images/shapes/section-title-shape-1.png" alt="">
-                                        </div>
-                                        <div class="section-title-shape-2">
-                                            <img src="assets/images/shapes/section-title-shape-2.png" alt="">
-                                        </div>
+                                    <p class="section-sub-title">About Us</p>
+                                    <div class="section-title-shape-1">
+                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                                     </div>
+                                    <div class="section-title-shape-2">
+                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
+                                    </div>
+                                </div>
                                 <h2 class="section-title-two__title">We Provide a Reliable Services</h2>
                             </div>
                             <p class="about-five__text">
@@ -235,13 +236,13 @@
                                                 <h4>Global logistics solution provider</h4>
                                             </div>
                                         </li>
-                                        
+
                                     </ul>
                                     <div class="about-five__btn-box">
                                         <a href="about.php" class="thm-btn-two about-five__btn">Read More <i class="fa fa-arrow-circle-right"></i> </a>
                                     </div>
                                 </div>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -249,28 +250,28 @@
             </div>
         </section>
 
-       <!--Services One Start-->
+        <!--Services One Start-->
         <section class="services-one">
             <div class="services-one__top">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12">
-                          
-                                <div class="section-title text-center">
-                                    <div class="section-sub-title-box">
-                                        <p class="section-sub-title">Our services</p>
-                                        <div class="section-title-shape-1">
-                                            <img src="assets/images/shapes/section-title-shape-1.png" alt="">
-                                        </div>
-                                        <div class="section-title-shape-2">
-                                            <img src="assets/images/shapes/section-title-shape-2.png" alt="">
-                                        </div>
+
+                            <div class="section-title text-center">
+                                <div class="section-sub-title-box">
+                                    <p class="section-sub-title">Our services</p>
+                                    <div class="section-title-shape-1">
+                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                                     </div>
-                                    <h2 class="section-title__title">Specialist logistics services</h2>
+                                    <div class="section-title-shape-2">
+                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
+                                    </div>
                                 </div>
-                          
+                                <h2 class="section-title__title">Specialist logistics services</h2>
+                            </div>
+
                         </div>
-                      
+
                     </div>
                 </div>
             </div>
@@ -408,7 +409,7 @@
                         </div>
                         <!--Services One Single End-->
                     </div>
-                     <div class="about-five__btn-box text-center">
+                    <div class="about-five__btn-box text-center">
                         <a href="service.php" class="thm-btn-two about-five__btn">View All <i class="fa fa-arrow-circle-right"></i> </a>
                     </div>
                 </div>
@@ -417,7 +418,7 @@
         <!--Services  End-->
 
 
-  <!--Why Choose  Start-->
+        <!--Why Choose  Start-->
         <section class="why-choose-four">
             <div class="why-choose-four__bg-box">
                 <div class="why-choose-four__bg-one"
@@ -433,7 +434,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="why-choose-four__left">
-                             <div class="section-title text-left">
+                            <div class="section-title text-left">
                                 <div class="section-sub-title-box">
                                     <p class="white-text">Why Choose Us</p>
                                     <div class="section-title-shape-1">
@@ -445,7 +446,7 @@
                                 </div>
                                 <h2 class="white-text">Moving your
                                     products across borders</h2>
-                             </div> 
+                            </div>
 
                             <p class="why-choose-four__text">We understand that choosing the right logistics partner is crucial for the success and efficiency of your business.</p>
                             <p class="why-choose-four__text">We pride ourselves on being a reliable and consistent logistics partner. Your shipments are not just packages; they are promises. We deliver on time, every time, ensuring that your business operations run smoothly without disruptions.</p>
@@ -499,7 +500,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                  <li>
+                                <li>
                                     <div class="why-choose-four__points-icon-box">
                                         <div class="why-choose-four__points-icon">
                                             <span class="fa fa-link"></span>
@@ -509,7 +510,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                  <li>
+                                <li>
                                     <div class="why-choose-four__points-icon-box">
                                         <div class="why-choose-four__points-icon">
                                             <span class="fa fa-hands-helping"></span>
@@ -527,7 +528,7 @@
         </section>
         <!--Why Choose  End-->
 
-          <!--Process Start-->
+        <!--Process Start-->
         <section class="process">
             <div class="container">
                 <div class="section-title text-center">
@@ -613,17 +614,17 @@
                         <!--Process Single End-->
                     </div>
                 </div>
-             
+
             </div>
         </section>
         <!--Process End-->
 
 
 
-            <!--Counter  Start-->
+        <!--Counter  Start-->
         <section class="counter-two">
             <div class="counter-two__bg-box">
-               
+
             </div>
             <div class="container">
                 <div class="row">
@@ -696,26 +697,26 @@
         </section>
         <!--Counter  End-->
 
-        
 
-     <!--Brand One Start-->
+
+        <!--Brand One Start-->
         <section class="brand-one">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
-                       <div class="section-title text-center">
-                                <div class="section-sub-title-box">
-                                    <p class="section-sub-title white-text">Our Client's</p>
-                                    <div class="section-title-shape-1">
-                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
-                                    </div>
-                                    <div class="section-title-shape-2">
-                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
-                                    </div>
+                        <div class="section-title text-center">
+                            <div class="section-sub-title-box">
+                                <p class="section-sub-title white-text">Our Client's</p>
+                                <div class="section-title-shape-1">
+                                    <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                                 </div>
-                                <h2 class="section-title__title white-text">Trusted By Worldwide</h2>
-                                <p class="mt-20">We are proud to have partnered with a diverse range of clients, each contributing to our journey and success. Our commitment to excellence, innovation, and client satisfaction has allowed us to build strong and enduring relationships across various industries.</p>
-                             </div> 
+                                <div class="section-title-shape-2">
+                                    <img src="assets/images/shapes/section-title-shape-2.png" alt="">
+                                </div>
+                            </div>
+                            <h2 class="section-title__title white-text">Trusted By Worldwide</h2>
+                            <p class="mt-20">We are proud to have partnered with a diverse range of clients, each contributing to our journey and success. Our commitment to excellence, innovation, and client satisfaction has allowed us to build strong and enduring relationships across various industries.</p>
+                        </div>
 
                     </div>
                     <div class="col-xl-12">
@@ -771,7 +772,7 @@
                                     <div class="swiper-slide">
                                         <img src="assets/images/clients/client8.png" alt="">
                                     </div><!-- /.swiper-slide -->
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -781,7 +782,7 @@
         </section>
         <!--Brand One End-->
 
-       <section class="tracking">
+        <section class="tracking">
             <div class="container-auto">
                 <div class="tracking__inner">
                     <div class="col-md-12">
@@ -800,147 +801,35 @@
                             </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
-        
+
         <!--Work Together Start-->
-        <section class="work-together">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="work-together__left">
-                            <div class="section-title text-left">
-                                <div class="section-sub-title-box">
-                                    <p class="section-sub-title">We always help</p>
-                                    <div class="section-title-shape-1">
-                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
-                                    </div>
-                                    <div class="section-title-shape-2">
-                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
-                                    </div>
-                                </div>
-                                <h2 class="section-title__title">Get a quote</h2>
-                            </div>
-                           <div class="contact-page__right">
-                            <div class="contact-page__form">
-                                <form action="#" class="comment-one__form contact-form-validated"
-                                    novalidate="novalidate">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Departure From" name="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Departure To" name="fromcity">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="tocity">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                               <select class="form-control">
-                                                <option selected>Select Service</option>
-                                                <option>Air Freight</option>
-                                                <option>Sea Freight</option>
-                                                <option>Train Freight</option>
-                                                <option>Road Freight</option>
-                                               </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            
-                                            <div class="comment-form__btn-box">
-                                                <button type="submit" class="thm-btn comment-form__btn">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="work-together__right">
-                            <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> What services does your logistics company provide?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>We offer a comprehensive range of logistics services, including but not limited to air freight, sea freight, road freight, warehousing, customs clearance, temperature-controlled cargo, and supply chain solutions. Our goal is to provide end-to-end logistics support for businesses of all sizes.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> How do I request a quote for your services?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Requesting a quote is easy. Simply visit our website and fill out the quote request form, providing details such as the type of service you require, the nature of your goods, origin, destination, and any specific requirements. Our team will promptly get back to you with a customized quote.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> Can I track my shipment?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Yes, we provide advanced tracking systems that allow you to monitor the status and location of your shipments in real-time. You can access the tracking information through our website or contact our customer support for assistance.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion last-chiled">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> What is the expected delivery time for international shipments?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>Delivery times vary depending on the mode of transportation and the destination. Our team will provide you with an estimated delivery time when you request a quote. Factors such as customs clearance and local regulations can also impact delivery schedules.</p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
         <!--Work Together End-->
 
-   
 
-   
 
-    <!-- Team Section Start -->
-  <section class="team">
-   
-       
- <div class="section-title text-center">
+
+
+        <!-- Team Section Start -->
+        
+        <!-- Team Section End -->
+
+
+
+
+        <!--Testimonial  Start-->
+        <section class="testimonial-five">
+            <div class="testimonial-five__shape-1"
+                style="background-image: url(assets/images/backgrounds/testibg.jpg);">
+            </div>
+            <div class="container">
+                <div class="section-title-three text-center">
                     <div class="section-sub-title-box">
-                        <p class="section-sub-title">Our Experts</p>
+                        <p class="section-sub-title white-text">testimonials</p>
                         <div class="section-title-shape-1">
                             <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                         </div>
@@ -948,165 +837,6 @@
                             <img src="assets/images/shapes/section-title-shape-2.png" alt="">
                         </div>
                     </div>
-                    <h2 class="section-title__title">In your absence, we will serve you
-</h2>
-                </div>
-    <div class="section-content">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/1.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="team-details.html">Jos Root</a></h4>
-                <h6 class="designation f-weight-500 text-gray">CEO</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/2.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="">Henry Starc </a></h4>
-                <h6 class="designation f-weight-500 text-gray">SENIOR MANAGER</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/3.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="">Mitchell Raw</a></h4>
-                <h6 class="designation f-weight-500 text-gray">SENIOR CONSULTANT</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/4.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="team-details.html">Jason Drop</a></h4>
-                <h6 class="designation f-weight-500 text-gray">MARKETING EXPERT</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/5.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="">Lana Cook</a></h4>
-                <h6 class="designation f-weight-500 text-gray">CTO</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/6.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="">Harry Washi</a></h4>
-                <h6 class="designation f-weight-500 text-gray">HEAD OF DEPARTMENT</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/7.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="">Steve Josef </a></h4>
-                <h6 class="designation f-weight-500 text-gray">CONSULTANT MANAGER</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="team-block mrb-30">
-              <div class="team-upper-part">
-                <img class="img-full" src="assets/images/team/8.jpg" alt="Locksmith">
-                <ul class="social-list">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-bottom-part">
-                <h4 class="team-title mrb-5"><a href="team-details.html">Lexa Mark</a></h4>
-                <h6 class="designation f-weight-500 text-gray">COUNSALER</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Team Section End -->
-
-
-    
-
-        <!--Testimonial  Start-->
-         <section class="testimonial-five">
-            <div class="testimonial-five__shape-1"
-                style="background-image: url(assets/images/backgrounds/testibg.jpg);">
-            </div>
-            <div class="container">
-                <div class="section-title-three text-center">
-                    <div class="section-sub-title-box">
-                                    <p class="section-sub-title white-text">testimonials</p>
-                                    <div class="section-title-shape-1">
-                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
-                                    </div>
-                                    <div class="section-title-shape-2">
-                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
-                                    </div>
-                                </div>
                     <h2 class="section-title-three__title white-text">Just Look What Our Clients Say.</h2>
                     <p class="white-text mt-20">We are proud to have partnered with a diverse range of clients, each contributing to our journey and success.<br> Our commitment to excellence, innovation, and client satisfaction has allowed us to build strong and enduring relationships across various industries.</p>
                 </div>
@@ -1134,81 +864,81 @@
                 }
                 }
                 }'>
-                <!--Testimonial Five Single Start-->
-                <div class="item">
-                <div class="testimonial-five__single">
-                <div class="testimonial-five__content">
-                <div class="testimonial-five__rating">
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                </div>
-                <p class="testimonial-five__text">“As always, once again came through for us when the shipment had to be there. I know I can always count on you and I can go home and let you handle it. That is priceless. Thanks again.”</p>
-                </div>
-                <div class="testimonial-five__client-info">
-                <div class="testimonial-five__client-img">
-                <img src="assets/images/testimonial/1.jpg" alt="">
-                </div>
-                <div class="testimonial-five__client-content">
-                <p class="testimonial-five__client-sub-title">CEO</p>
-                <h4 class="testimonial-five__client-name">Pranil</h4>
-                </div>
-                </div>
-                </div>
-                </div>
-                <!--Testimonial Five Single End-->
-                <!--Testimonial Five Single Start-->
-                <div class="item">
-                <div class="testimonial-five__single">
-                <div class="testimonial-five__content">
-                <div class="testimonial-five__rating">
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                </div>
-                <p class="testimonial-five__text">“Since we started working with, we've seen our supply chain improve considerably. It is vital that our components and generators arrive safely to our customers,they have delivered on their promises.”</p>
-                </div>
-                <div class="testimonial-five__client-info">
-                <div class="testimonial-five__client-img">
-                <img src="assets/images/testimonial/2.jpg" alt="">
-                </div>
-                <div class="testimonial-five__client-content">
-                <p class="testimonial-five__client-sub-title">Co Founder</p>
-                <h4 class="testimonial-five__client-name">Sarah Albert</h4>
-                </div>
-                </div>
-                </div>
-                </div>
-                <!--Testimonial Five Single End-->
-                <!--Testimonial Five Single Start-->
-                <div class="item">
-                <div class="testimonial-five__single">
-                <div class="testimonial-five__content">
-                <div class="testimonial-five__rating">
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                </div>
-                <p class="testimonial-five__text">“My team and I appreciate the way that you are always on the ball and willing to go out of your way to help get us our material in time to prevent our lines from going down. Nice Job!”</p>
-                </div>
-                <div class="testimonial-five__client-info">
-                <div class="testimonial-five__client-img">
-                <img src="assets/images/testimonial/3.jpg" alt="">
-                </div>
-                <div class="testimonial-five__client-content">
-                <p class="testimonial-five__client-sub-title">Co Founder</p>
-                <h4 class="testimonial-five__client-name">Michale Smith</h4>
-                </div>
-                </div>
-                </div>
-                </div>
-                <!--Testimonial Five Single End-->
+                    <!--Testimonial Five Single Start-->
+                    <div class="item">
+                        <div class="testimonial-five__single">
+                            <div class="testimonial-five__content">
+                                <div class="testimonial-five__rating">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="testimonial-five__text">“As always, once again came through for us when the shipment had to be there. I know I can always count on you and I can go home and let you handle it. That is priceless. Thanks again.”</p>
+                            </div>
+                            <div class="testimonial-five__client-info">
+                                <div class="testimonial-five__client-img">
+                                    <img src="assets/images/testimonial/1.jpg" alt="">
+                                </div>
+                                <div class="testimonial-five__client-content">
+                                    <p class="testimonial-five__client-sub-title">CEO</p>
+                                    <h4 class="testimonial-five__client-name">Pranil</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Five Single End-->
+                    <!--Testimonial Five Single Start-->
+                    <div class="item">
+                        <div class="testimonial-five__single">
+                            <div class="testimonial-five__content">
+                                <div class="testimonial-five__rating">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="testimonial-five__text">“Since we started working with, we've seen our supply chain improve considerably. It is vital that our components and generators arrive safely to our customers,they have delivered on their promises.”</p>
+                            </div>
+                            <div class="testimonial-five__client-info">
+                                <div class="testimonial-five__client-img">
+                                    <img src="assets/images/testimonial/2.jpg" alt="">
+                                </div>
+                                <div class="testimonial-five__client-content">
+                                    <p class="testimonial-five__client-sub-title">Co Founder</p>
+                                    <h4 class="testimonial-five__client-name">Sarah Albert</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Five Single End-->
+                    <!--Testimonial Five Single Start-->
+                    <div class="item">
+                        <div class="testimonial-five__single">
+                            <div class="testimonial-five__content">
+                                <div class="testimonial-five__rating">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <p class="testimonial-five__text">“My team and I appreciate the way that you are always on the ball and willing to go out of your way to help get us our material in time to prevent our lines from going down. Nice Job!”</p>
+                            </div>
+                            <div class="testimonial-five__client-info">
+                                <div class="testimonial-five__client-img">
+                                    <img src="assets/images/testimonial/3.jpg" alt="">
+                                </div>
+                                <div class="testimonial-five__client-content">
+                                    <p class="testimonial-five__client-sub-title">Co Founder</p>
+                                    <h4 class="testimonial-five__client-name">Michale Smith</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Testimonial Five Single End-->
                 </div>
             </div>
         </section>
@@ -1243,7 +973,7 @@
                             </div>
                             <div class="news-two__content">
                                 <h3 class="news-two__title"><a href="">
-    Understanding the Basics of Supply Chain Management</a></h3>
+                                        Understanding the Basics of Supply Chain Management</a></h3>
                                 <div class="news-two__client">
                                     <div class="news-two__client-img">
                                         <img src="assets/images/blogs/user.png" alt="user">
@@ -1273,8 +1003,8 @@
                             </div>
                             <div class="news-two__content">
                                 <h3 class="news-two__title"><a href="">
-    Choosing the Right Logistics Partner
-</a></h3>
+                                        Choosing the Right Logistics Partner
+                                    </a></h3>
                                 <div class="news-two__client">
                                     <div class="news-two__client-img">
                                         <img src="assets/images/blogs/user.png" alt="user">
@@ -1304,8 +1034,8 @@
                             </div>
                             <div class="news-two__content">
                                 <h3 class="news-two__title"><a href="">
-                                   The Role of Technology in Logistics
-                                </a></h3>
+                                        The Role of Technology in Logistics
+                                    </a></h3>
                                 <div class="news-two__client">
                                     <div class="news-two__client-img">
                                         <img src="assets/images/blogs/user.png" alt="user">
@@ -1326,7 +1056,7 @@
             </div>
         </section>
         <!--News  End-->
-   <section class="tracking">
+        <section class="tracking">
             <div class="container-auto">
                 <div class="tracking__inner">
                     <div class="tracking-shape-4 float-bob-y">
@@ -1344,15 +1074,15 @@
             </div>
         </section>
 
-       <!-- Footer Start-->
-       <?php  include('components/footer.php') ?>
+        <!-- Footer Start-->
+        <?php include('components/footer.php') ?>
         <!-- Footer End-->
 
 
     </div><!-- /.page-wrapper -->
 
 
-     <div class="mobile-nav__wrapper">
+    <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
@@ -1433,7 +1163,7 @@
     <script src="assets/vendors/timepicker/timePicker.js"></script>
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
-    
+
 
 
 
@@ -1441,22 +1171,25 @@
     <!-- js file -->
     <script src="assets/js/main.js"></script>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6756bd722480f5b4f5aaaccd/1ield82tf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6756bd722480f5b4f5aaaccd/1ield82tf';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 
 
 
 <!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:05 GMT -->
+
 </html>
