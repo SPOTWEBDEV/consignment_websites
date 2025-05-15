@@ -77,11 +77,11 @@
                                                  alt="Supply Chain">
                                         </a>
                                         <ul class="post-categories">
-                                            <li><a href="blog-details.html">Supply Chain</a></li>
+                                            <li><a href="">Supply Chain</a></li>
                                         </ul>
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="blog-title"><a href="blog-details.html">Understanding the Basics of Supply Chain Management</a></h3>
+                                        <h3 class="blog-title"><a href="">Understanding the Basics of Supply Chain Management</a></h3>
                                         <div class="blog-meta">
                                             <ul class="btm-cate">
                                                 <li>
@@ -112,11 +112,11 @@
                                                  alt="Logistics Partner">
                                         </a>
                                         <ul class="post-categories">
-                                            <li><a href="blog-details.html">Logistics Partner</a></li>
+                                            <li><a href="">Logistics Partner</a></li>
                                         </ul>
                                     </div>
                                     <div class="blog-content">
-                                        <h3 class="blog-title"><a href="blog-details.html">Choosing the Right Logistics Partner</a></h3>
+                                        <h3 class="blog-title"><a href="">Choosing the Right Logistics Partner</a></h3>
                                         <div class="blog-meta">
                                             <ul class="btm-cate">
                                                 <li>
@@ -192,35 +192,9 @@
                     </div>
                     <div class="col-lg-4 col-md-12 order-last">
                         <div class="widget-area-blogsidebar">
-                            <div class="search-widget mb-50">
-                                <div class="widget-title">
-                                    <h3 class="title mb-30">Search Article</h3>
-                                </div>
-                                <div class="search-wrap">
-                                    <input type="search" placeholder="Search article..." name="search" class="search-input"
-                                           value="">
-                                    <button type="submit" value="Search"><i class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                            <div class="categories-blogsidebar mb-50">
-                                <div class="widget-title">
-                                    <h3 class="title mb-50">Popular Categories</h3>
-                                </div>
-                                <ul>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Logistics</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Cargo</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Warehouse</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Commertial</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Custom Clearance</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Air Chartering</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Temperature Cargo</a></li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Dangerous Goods </a>
-                                    </li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">Cross & 3rd Country Logistics </a>
-                                    </li>
-                                    <li><i class="fa fa-arrow-circle-right"></i> <a href="#">House Relocation </a>
-                                    </li>   
-                                </ul>
+                            
+                            
+                               
                             </div>
                             <div class="recent-posts mb-50">
                                 <div class="widget-title">
@@ -265,24 +239,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="categories mb-50">
-                                <div class="widget-title">
-                                    <h3 class="title mb-50">Popular Tags</h3>
-                                </div>
-                                <div class="tagclouds">
-                                    <a href="javascript:void(0);" title="">Logistics</a>
-                                    <a href="javascript:void(0);" title="">Shipping</a>
-                                    <a href="javascript:void(0);" title="">Cargo</a>
-                                    <a href="javascript:void(0);" title="">Air Freight</a>
-                                    <a href="javascript:void(0);" title="">Packaging</a>
-                                    <a href="javascript:void(0);" title="">Supply Chain</a>
-                                    <a href="javascript:void(0);" title="">Trucking</a>
-                                    <a href="javascript:void(0);" title="">Transporatation</a>
-                                    <a href="javascript:void(0);" title="">Transit</a>
-                                     
-                                </div>
-                            </div>
-
+                           
 
                         </div>
                     </div>
@@ -340,13 +297,7 @@
                     <a href="tel:+1(206) 638-3417"></a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__top">
-                <div class="mobile-nav__social">
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-facebook-square"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
+            
 
 
 
