@@ -58,9 +58,7 @@
                                         <div class="icon">
                                             <span class="icon-telephone"></span>
                                         </div>
-                                        <div class="text">
-                                            <p><a href="tel:+1(206) 638-3417">+1(206) 638-3417</a></p>
-                                        </div>
+                                        <
                                     </li>
                                     <li>
                                         <div class="icon">
