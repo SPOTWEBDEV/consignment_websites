@@ -157,17 +157,14 @@ include('../../saver/authorization.php'); ?>
                                                 <label for="inputNanme4" class="form-label">Description</label>
                                                 <input type="text" name="description" value="<?php echo $details['description'];?>" class="form-control" id="inputNanme4" required>
                                             </div>
-                                            <div class="col-12">
-                                                <label for="inputEmail4" class="form-label">Insurance</label>
-                                                <input type="text" name="insurance" value="<?php echo $details['insurance'];?>" class="form-control" id="inputEmail4" required>
-                                            </div>
+                                            
                                             <div class="col-12">
                                                 <label for="inputPassword4" class="form-label">Weight</label>
                                                 <input type="text" name="weight" value="<?php echo $details['weight'];?>" class="form-control" id="inputPassword4" required>
                                             </div>
                                             <div class="col-12">
 
-                                                <label for="inputAddress" class="form-label">Current Country</label>
+                                                <label for="inputAddress" class="form-label">Shipping From Country</label>
                                                 <select name="current_country" id="select_country" class="form-control" id="inputAddress" required>
 
 
@@ -215,10 +212,7 @@ include('../../saver/authorization.php'); ?>
                                                 <label for="inputPassword4" class="form-label">Arrival Date</label>
                                                 <input type="date" name="arrival_date" class="form-control" id="inputPassword4" required>
                                             </div>
-                                            <div class="col-12">
-                                                <label for="inputPassword4" class="form-label">Message</label>
-                                                <input type="text" name="message" value="<?php echo $details['message'];?>" class="form-control" id="inputPassword4" required>
-                                            </div>
+                                            
                                         
                                             <div class="">
 
@@ -297,7 +291,6 @@ include('../../saver/authorization.php'); ?>
         
 
         $description=$_POST['description'];
-        $insurance=$_POST['insurance'];
         $weight=$_POST['weight'];
         $current_country=$_POST['current_country'];
         $destination=$_POST['destination'];
@@ -306,10 +299,10 @@ include('../../saver/authorization.php'); ?>
         $status=$_POST['status'];
         $shipment_date=$_POST['shipment_date'];
         $arrival_date=$_POST['arrival_date'];
-        $message=$_POST['message'];
+        
         $track=$_POST['track'];
 
-        $sql = mysqli_query($connection,"UPDATE `details` SET `description`=' $description',`insurance`='$insurance',`weight`='$weight',`paid_fee`='$paid_fee',`total_fee`='$total_fee',`status`='$status',`destination`='$destination',`current_country`='$current_country',`shippment_date`='$shipment_date',`arrival_date`='$arrival_date',`message`='$message' WHERE `track`= '$track'");
+        $sql = mysqli_query($connection,"UPDATE `details` SET `description`=' $description',`weight`='$weight',`paid_fee`='$paid_fee',`total_fee`='$total_fee',`status`='$status',`destination`='$destination',`current_country`='$current_country',`shippment_date`='$shipment_date',`arrival_date`='$arrival_date' WHERE `track`= '$track'");
 
         if ($sql){
 

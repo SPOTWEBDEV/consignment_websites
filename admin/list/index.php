@@ -1,4 +1,5 @@
-<?php  include('../../saver/connection.php'); include('../../saver/authorization.php'); ?>
+<?php include('../../saver/connection.php');
+include('../../saver/authorization.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,8 +107,8 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-   <?php include('../components/sidebar.php'); ?>
-<!-- End Sidebar-->
+  <?php include('../components/sidebar.php'); ?>
+  <!-- End Sidebar-->
 
   <main id="main" class="main">
 
@@ -125,10 +126,10 @@
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-8">
+        <div class="col-12">
           <div class="row">
 
-            <?php  include('../components/box.php');  ?>
+
             <!-- End Customers Card -->
 
             <!-- Recent Sales -->
@@ -140,7 +141,7 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Shipping  <span>| List</span></h5>
+                  <h5 class="card-title">Shipping <span>| List</span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
@@ -157,7 +158,8 @@
                         <th scope="col" style="white-space: nowrap;">RECEIVER COUNTRY</th>
                         <th scope="col" style="white-space: nowrap;">RECEIVER ADDRESS</th>
                         <th scope="col" style="white-space: nowrap;">TRACKING CODE</th>
-                        
+                        <th scope="col" style="white-space: nowrap;">ACTION</th>
+
                       </tr>
                     </thead>
                     <tbody>
@@ -165,39 +167,44 @@
 
                       <?php
 
-                            $id = $_SESSION['admin'];
-                            $query = mysqli_query($connection,"SELECT * FROM `user`");
 
-                            if (mysqli_num_rows($query) > 0){
-                              $count = 0 ;
-                              while($details = mysqli_fetch_assoc($query)){ $count++?>
+                      $query = mysqli_query($connection, "SELECT * FROM `user`");
 
-                                  <tr>
-                                    <th scope="row"><a href="#"><?php echo $count;; ?></a></th>
-                                    <td><?php echo $details['sender_name']; ?></td>
-                                    <td><?php echo $details['sender_email']; ?></td>
-                                    <td><?php echo $details['sender_phone']; ?></td>
-                                    <td><?php echo $details['sender_country']; ?></td>
-                                    <td><?php echo $details['sender_address']; ?></td>
-                                    <td><?php echo $details['receiver_name']; ?></td>
-                                    <td><?php echo $details['receiver_email']; ?></td>
-                                    <td><?php echo $details['receiver_phone']; ?></td>
-                                    <td><?php echo $details['receiver_country']; ?></td>
-                                    <td><?php echo $details['receiver_address']; ?></td>
-                                    <td><?php echo $details['track']; ?></td>
-                                    <td><a href="?del=<?php echo $details['id'];?>&track=<?php echo $details['track'];?>"><span class="badge" style="background-color:red;padding:7px;">Delete</span></a></td>
-                                    <td><a href="../manage/?track=<?php echo $details['track'];?>"><span class="badge" style="background-color:blue;padding:7px;">Manage</span></a></td>
-                                    <td><a href="../board/?track=<?php echo $details['track'];?>"><span class="badge" style="background-color:blue;padding:7px;">Billboard</span></a></td>
-                                    <td><a href="../stages/?track=<?php echo $details['track'];?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a></td>
+                      if (mysqli_num_rows($query) > 0) {
+                        $count = 0;
+                        while ($details = mysqli_fetch_assoc($query)) {
+                          $count++ ?>
 
-                                    
-                                  </tr>
+                          <tr>
+                            <th scope="row"><a href="#"><?php echo $count;; ?></a></th>
+                            <td><?php echo $details['sender_name']; ?></td>
+                            <td><?php echo $details['sender_email']; ?></td>
+                            <td><?php echo $details['sender_phone']; ?></td>
+                            <td><?php echo $details['sender_country']; ?></td>
+                            <td><?php echo $details['sender_address']; ?></td>
+                            <td><?php echo $details['receiver_name']; ?></td>
+                            <td><?php echo $details['receiver_email']; ?></td>
+                            <td><?php echo $details['receiver_phone']; ?></td>
+                            <td><?php echo $details['receiver_country']; ?></td>
+                            <td><?php echo $details['receiver_address']; ?></td>
+                            <td><?php echo $details['track']; ?></td>
+                            <td>
+                              <a onclick="return confirm('Are you sure')" href="?del=<?php echo $details['id']; ?>&track=<?php echo $details['track']; ?>">
+                                <span class="badge" style="background-color:red;padding:7px;">Delete</span>
+                              </a>
+                            </td>
+
+                            <td><a href="../manage/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Manage</span></a></td>
+                            <td><a href="../board/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Billboard</span></a></td>
+                            <td><a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a></td>
 
 
-                            <?php  }
+                          </tr>
 
-                            }
-                      
+
+                      <?php  }
+                      }
+
                       ?>
 
 
@@ -213,91 +220,7 @@
 
           </div>
         </div>
-        <!-- Right side columns -->
-        <div class="col-lg-4">
 
-
-
-          <!-- Budget Report -->
-          <div class="card">
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
-
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
-
-            <div class="card-body pb-0">
-              <h5 class="card-title">Budget Report <span>| This Month</span></h5>
-
-              <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
-
-              <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
-                    legend: {
-                      data: ['Allocated Budget', 'Actual Spending']
-                    },
-                    radar: {
-                      // shape: 'circle',
-                      indicator: [{
-                          name: 'Sales',
-                          max: 6500
-                        },
-                        {
-                          name: 'Administration',
-                          max: 16000
-                        },
-                        {
-                          name: 'Information Technology',
-                          max: 30000
-                        },
-                        {
-                          name: 'Customer Support',
-                          max: 38000
-                        },
-                        {
-                          name: 'Development',
-                          max: 52000
-                        },
-                        {
-                          name: 'Marketing',
-                          max: 25000
-                        }
-                      ]
-                    },
-                    series: [{
-                      name: 'Budget vs spending',
-                      type: 'radar',
-                      data: [{
-                          value: [4200, 3000, 20000, 35000, 50000, 18000],
-                          name: 'Allocated Budget'
-                        },
-                        {
-                          value: [5000, 14000, 28000, 26000, 42000, 21000],
-                          name: 'Actual Spending'
-                        }
-                      ]
-                    }]
-                  });
-                });
-              </script>
-
-            </div>
-          </div><!-- End Budget Report -->
-
-
-          
-
-
-
-        </div><!-- End Right side columns -->
 
       </div>
     </section>
@@ -339,31 +262,25 @@
 
 <?php
 
-        
-
-        if (isset($_GET['del'])){
-
-          $del_id = $_GET['del'];
-          $track = $_GET['track'];
-
-            $query1 = mysqli_query($connection,"DELETE FROM `user` WHERE `id`='$del_id'");
-            $query2 = mysqli_query($connection,"DELETE FROM `details` WHERE `track`='$track'");
-            
-            if ($query1 && $query1){
-
-              echo "<script> location.href='index.php'  </script> ";
 
 
+if (isset($_GET['del'])) {
 
-            }else{
+  $del_id = $_GET['del'];
+  $track = $_GET['track'];
+
+  $query1 = mysqli_query($connection, "DELETE FROM `user` WHERE `id`='$del_id'");
+  $query2 = mysqli_query($connection, "DELETE FROM `details` WHERE `track`='$track'");
+
+  if ($query1 && $query1) {
+
+    echo "<script> location.href='index.php'  </script> ";
+  } else {
 
 
-                 echo "<script> alert('UNABLE TO DELETE')  </script> ";
-
-            }
-
-
-        }
+    echo "<script> alert('UNABLE TO DELETE')  </script> ";
+  }
+}
 
 
 

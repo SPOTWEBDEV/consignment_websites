@@ -301,7 +301,7 @@ $receiver_address = mysqli_real_escape_string($connection, $_POST['receiver_addr
     // Execute the query
     
     if ($sql1 && $sql2) {
-        echo "<script> location.href='../users/' </script>";
+        echo "<script> location.href='../list/' </script>";
     } else {
         echo "Error: " . mysqli_error($connection);
     }
