@@ -54,12 +54,7 @@
                             <div class="footer-widget__column footer-widget__contact clearfix">
                                 <h3 class="footer-widget__title">Contact Details</h3>
                                 <ul class="footer-widget__contact-list list-unstyled clearfix">
-                                      <li>
-                                        <div class="icon">
-                                            <span class="icon-telephone"></span>
-                                        </div>
-                                        <
-                                    </li>
+                                    
                                     <li>
                                         <div class="icon">
                                             <span class="icon-email"></span>
@@ -93,7 +88,7 @@
                         <div class="col-xl-4">
                             <div class="site-footer__bottom-inner">
                                 <p class="site-footer__bottom-text">
-                                    © Yoursite 2023 All Right Reserved.
+                                    © <?php  echo $sitename ?> ||  2023 All Right Reserved.
                                 </p>
                             </div>
                         </div>

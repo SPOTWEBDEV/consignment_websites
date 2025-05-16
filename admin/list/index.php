@@ -31,17 +31,25 @@ include('../../saver/authorization.php'); ?>
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Updated: Apr 20 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                           rel="stylesheet">
 </head>
 
 <body>
+
+<style>
+
+  *{
+    font-family:'Poppins', sans-serif;
+  }
+  a{
+     text-transform:capitalize;
+     font-weight:300;
+  }
+   
+</style>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -122,14 +130,7 @@ include('../../saver/authorization.php'); ?>
                         <th scope="col" style="white-space: nowrap;">#</th>
                         <th scope="col" style="white-space: nowrap;">SENDER NAME </th>
                         <th scope="col" style="white-space: nowrap;">SENDER EMAIL </th>
-                        <th scope="col" style="white-space: nowrap;">SENDER PHONE</th>
-                        <th scope="col" style="white-space: nowrap;">SENDER COUNTRY</th>
-                        <th scope="col" style="white-space: nowrap;">SENDER ADDRESS</th>
                         <th scope="col" style="white-space: nowrap;">RECEIVER NAME </th>
-                        <th scope="col" style="white-space: nowrap;">RECEIVER EMAIL </th>
-                        <th scope="col" style="white-space: nowrap;">RECEIVER PHONE</th>
-                        <th scope="col" style="white-space: nowrap;">RECEIVER COUNTRY</th>
-                        <th scope="col" style="white-space: nowrap;">RECEIVER ADDRESS</th>
                         <th scope="col" style="white-space: nowrap;">TRACKING CODE</th>
                         <th scope="col" style="white-space: nowrap;">ACTION</th>
 
@@ -151,20 +152,13 @@ include('../../saver/authorization.php'); ?>
                           <tr>
                             <th scope="row"><a href="#"><?php echo $count;; ?></a></th>
                             <td><?php echo $details['sender_name']; ?></td>
-                            <td><?php echo $details['sender_email']; ?></td>
-                            <td><?php echo $details['sender_phone']; ?></td>
-                            <td><?php echo $details['sender_country']; ?></td>
-                            <td><?php echo $details['sender_address']; ?></td>
-                            <td><?php echo $details['receiver_name']; ?></td>
-                            <td><?php echo $details['receiver_email']; ?></td>
-                            <td><?php echo $details['receiver_phone']; ?></td>
-                            <td><?php echo $details['receiver_country']; ?></td>
-                            <td><?php echo $details['receiver_address']; ?></td>
+                            <td><?php echo $details['sender_email']; ?></td>                            
+                            <td><?php echo $details['receiver_name']; ?></td>                            
                             <td><?php echo $details['track']; ?></td>
-                            
-
-
                             <td>
+
+                               <div style="display:flex; gap:20px">
+                                  <a href="../view/?track=<?php echo $details['track']; ?>"><span class="badge " style="background-color:blue;padding:7px;">View</span></a>
 
                             <a onclick="return confirm('Are you sure')" href="?del=<?php echo $details['id']; ?>&track=<?php echo $details['track']; ?>">
                                 <span class="badge" style="background-color:red;padding:7px;">Delete</span>
@@ -175,6 +169,7 @@ include('../../saver/authorization.php'); ?>
                             <a href="../board/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Billboard</span></a>
 
                             <a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a>
+                               </div>
 
                             </td>
 

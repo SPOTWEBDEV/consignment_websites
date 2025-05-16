@@ -1,18 +1,13 @@
 ﻿<?php include('./saver/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
-<!-- Mirrored from thetestingstudio.com/logispeed/service-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:09 GMT -->
 <head>
      <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="logistics, air freight, sea freight, road Freight, Transportaion, shipping, cargo, port, supply chain, Temperature Cargo, Warehouse, custom clearance">
-    <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
+    <meta name="description" content="<?php echo $sitename   ?>- Transportaion Html Responsive Template">
     <title><?php echo  $sitename ?> - service </title>
 
     <!-- favicon -->
@@ -29,15 +24,6 @@
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
-
-
-
-
-
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <!-- /.preloader -->
 
 
     <div class="page-wrapper">
@@ -555,12 +541,9 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
+                    <a href="mailto:<?php echo  $siteemail ?>"><?php echo  $siteemail ?></a>
                 </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:+1(206) 638-3417"></a>
-                </li>
+                
             </ul><!-- /.mobile-nav__contact -->
             
 
@@ -638,5 +621,5 @@ s0.parentNode.insertBefore(s1,s0);
 
 
 
-<!-- Mirrored from thetestingstudio.com/logispeed/service-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:09 GMT -->
+
 </html>

@@ -1,18 +1,13 @@
 ﻿<?php include('./saver/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
-<!-- Mirrored from thetestingstudio.com/logispeed/about-us2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:07 GMT -->
 <head>
        <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
-    <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
+    <meta name="description" content="<?php echo $sitename   ?> - Transportaion Html Responsive Template">
     <title><?php echo  $sitename ?> |  About Us </title>
 
     <!-- favicon -->
@@ -494,12 +489,9 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
+                    <a href="mailto:<?php echo $siteemail ?>"><?php echo  $siteemail ?></a>
                 </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:1234567890">+1(206) 638-3417</a>
-                </li>
+                
             </ul>
           
 
@@ -559,20 +551,8 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
 
     <!-- js file -->
     <script src="assets/js/main.js"></script>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6756bd722480f5b4f5aaaccd/1ield82tf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
 </body>
 
-<!-- Mirrored from thetestingstudio.com/logispeed/about-us2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:07 GMT -->
+
 </html>

@@ -1,18 +1,13 @@
 ﻿<?php include('./saver/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-<!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:04 GMT -->
-
 <head>
     <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="logistics, air freight, sea freight, road Freight, Transportaion, shipping, cargo, port, supply chain, Temperature Cargo, Warehouse, custom clearance">
-    <meta name="description" content="LogiSpeed - Transportaion Html Responsive Template">
+    <meta name="description" content="<?php echo $sitename   ?> - Transportaion Html Responsive Template">
     <title><?php echo  $sitename ?> -- Home</title>
 
     <!-- favicon -->
@@ -35,10 +30,6 @@
 
 
 
-    <div class="preloader">
-        <div class="preloader__image"></div>
-    </div>
-    <!-- /.preloader -->
 
 
     <div class="page-wrapper">
