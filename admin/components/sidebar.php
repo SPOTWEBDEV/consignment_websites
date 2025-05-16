@@ -34,12 +34,7 @@
             </ul>
         </li><!-- End Components Nav -->
 
-        <li class="nav-item">
-            <a class="nav-link " href="../boardlist/">
-                <i class="bi bi-grid"></i>
-                <span>Billboard</span>
-            </a>
-        </li>
+
 
 
 

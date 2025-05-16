@@ -92,11 +92,11 @@ include('../../saver/authorization.php'); ?>
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Manage shipment</h1>
+            <h1>Manage Shipping</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item">edit Shippmet</li>
+                    <li class="breadcrumb-item">Edit Shipping</li>
 
                 </ol>
             </nav>
@@ -109,11 +109,7 @@ include('../../saver/authorization.php'); ?>
 
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Shipent Information</h5>
-
-                            
-
-
+                            <h5 class="card-title">Shipping Information</h5>
                             <?php 
 
                                 $track =  $_GET['track'];
@@ -128,7 +124,7 @@ include('../../saver/authorization.php'); ?>
                                             
                                             
                                             <div class="col-12">
-                                                <label for="inputNanme4" class="form-label">Tracking id </label>
+                                                <label for="inputNanme4" class="form-label">Tracking Id </label>
                                                 <input type="text" name="track" class="form-control" id="inputNanme4" value="<?php echo $details['track'];  ?>" readonly>
                                             </div>
                                             
@@ -138,7 +134,7 @@ include('../../saver/authorization.php'); ?>
                                             </div>
                                             
                                             <div class="col-12">
-                                                <label for="inputPassword4" class="form-label">Weight</label>
+                                                <label for="inputPassword4" class="form-label">Weight (kg)</label>
                                                 <input type="text" name="weight" value="<?php echo $details['weight'];?>" class="form-control" id="inputPassword4" required>
                                             </div>
                                             <div class="col-12">
@@ -160,13 +156,13 @@ include('../../saver/authorization.php'); ?>
                                                 </select>
                                             </div>
                                             <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Paid Fee</label>
+                                                <label for="inputAddress" class="form-label">Paid Fee (<?php echo $money ?>)</label>
                                                 <input type="text" name="paid_fee" value="<?php echo $details['paid_fee'];?>" class="form-control" id="inputAddress" required>
                                             </div>
 
 
                                             <div class="col-12">
-                                                <label for="inputNanme4" class="form-label">Total Fee</label>
+                                                <label for="inputNanme4" class="form-label">Total Fee (<?php echo $money ?>)</label>
                                                 <input type="text" name="total_fee" value="<?php echo $details['total_fee'];?>" class="form-control" id="inputNanme4" required>
                                             </div>
                                             <div class="col-12">
@@ -174,7 +170,7 @@ include('../../saver/authorization.php'); ?>
                                                 <label for="inputAddress" class="form-label">Status</label>
                                                 <select name="status" class="form-control" id="inputAddress" required>
 
-                                                    <option value="">select</option>
+                                                    <option value="<?php echo $details['status'];?>"><?php echo $details['status'];?></option>
                                                     <option value="on transit">on transit</option>
                                                     <option value="stop">stop</option>
                                                     <option value="arrived">arrived</option>
@@ -185,11 +181,11 @@ include('../../saver/authorization.php'); ?>
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputEmail4" class="form-label">Shipment Date</label>
-                                                <input type="date" name="shipment_date"  class="form-control" id="inputEmail4" required>
+                                                <input value="<?php echo $details['shippment_date'];?>" type="date" name="shipment_date"  class="form-control" id="inputEmail4" required>
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputPassword4" class="form-label">Arrival Date</label>
-                                                <input type="date" name="arrival_date" class="form-control" id="inputPassword4" required>
+                                                <input value="<?php echo $details['arrival_date'];?>" type="date" name="arrival_date" class="form-control" id="inputPassword4" required>
                                             </div>
                                             
                                         
@@ -219,19 +215,7 @@ include('../../saver/authorization.php'); ?>
 
     </main>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-        <div class="copyright">
-            &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-    </footer><!-- End Footer -->
+
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
