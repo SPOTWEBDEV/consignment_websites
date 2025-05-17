@@ -55,7 +55,7 @@ if ($isLocalhost) {
 
 $siteshort = 'UPSIL';
 $sitename = 'United Parcel Service International Limited';
-$siteemail = 'support@unitedparcel.com';
+$siteemail = 'support@upsnlt.com';
 
 $money = '&#36;';
 

@@ -1,4 +1,4 @@
-<?php include('../../saver/connection.php')?>
+<?php include('../../server/connection.php')?>
 <?php 
 
     function getUserIP() {

@@ -1,6 +1,7 @@
-<?php include('./saver/connection.php') ?>
+<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Responsive -->
     <meta charset="UTF-8">
@@ -53,161 +54,131 @@
 
 
         <!--Counter  Start-->
-      
-                
-            </div>
-        </section>
 
-        <!--FAQ One Start-->
-        <section class="faq-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <div class="section-sub-title-box">
-                        <p class="section-sub-title">We always help</p>
-                        <div class="section-title-shape-1">
-                            <img src="assets/images/shapes/section-title-shape-1.png" alt="Faq">
-                        </div>
-                        <div class="section-title-shape-2">
-                            <img src="assets/images/shapes/section-title-shape-2.png" alt="faq">
-                        </div>
+
+    </div>
+    </section>
+
+    <!--FAQ One Start-->
+    <section class="faq-one">
+        <div class="container">
+            <div class="section-title text-center">
+                <div class="section-sub-title-box">
+                    <p class="section-sub-title">We always help</p>
+                    <div class="section-title-shape-1">
+                        <img src="assets/images/shapes/section-title-shape-1.png" alt="Faq">
                     </div>
-                    <h2 class="section-title__title">They frequently asked questions</h2>
+                    <div class="section-title-shape-2">
+                        <img src="assets/images/shapes/section-title-shape-2.png" alt="faq">
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__single">
-                            <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> What services does your logistics company provide?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                We offer a comprehensive range of logistics services, including but not limited to air freight, sea freight, road freight, warehousing, customs clearance, temperature-controlled cargo, and supply chain solutions. Our goal is to provide end-to-end logistics support for businesses of all sizes.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                <h2 class="section-title__title">They frequently asked questions</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="faq-one__single">
+                        <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> What services does your logistics company provide?</h4>
                                 </div>
-                                <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> How do I request a quote for your services?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                Requesting a quote is easy. Simply visit our website and fill out the quote request form, providing details such as the type of service you require, the nature of your goods, origin, destination, and any specific requirements. Our team will promptly get back to you with a customized quote.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
-                                </div>
-                                <div class="accrodion last-chiled">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> Can I track my shipment?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                Yes, we provide advanced tracking systems that allow you to monitor the status and location of your shipments in real-time. You can access the tracking information through our website or contact our customer support for assistance.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            We offer a comprehensive range of logistics services, including but not limited to air freight, sea freight, road freight, warehousing, customs clearance, temperature-controlled cargo, and supply chain solutions. Our goal is to provide end-to-end logistics support for businesses of all sizes.
+                                        </p>
+                                    </div><!-- /.inner -->
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__single">
-                            <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-2">
-                                <div class="accrodion">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> What is the expected delivery time for international shipments?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                Delivery times vary depending on the mode of transportation and the destination. Our team will provide you with an estimated delivery time when you request a quote. Factors such as customs clearance and local regulations can also impact delivery schedules.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> How do I request a quote for your services?</h4>
                                 </div>
-                                <div class="accrodion active">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> How do I pay for your logistics services?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                We offer multiple payment options, including online payments through our secure portal, bank transfers, and traditional methods such as cheques. Details for each payment method are provided on your invoice, and our finance department is available to assist with any payment-related inquiries.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Requesting a quote is easy. Simply visit our website and fill out the quote request form, providing details such as the type of service you require, the nature of your goods, origin, destination, and any specific requirements. Our team will promptly get back to you with a customized quote.
+                                        </p>
+                                    </div><!-- /.inner -->
                                 </div>
-                                <div class="accrodion last-chiled">
-                                    <div class="accrodion-title">
-                                        <h4><span class="fa fa-ship"></span> What measures do you take to ensure the security of shipments?</h4>
-                                    </div>
-                                    <div class="accrodion-content">
-                                        <div class="inner">
-                                            <p>
-                                                We prioritize the security of your goods. Our facilities are equipped with state-of-the-art security systems, and our team follows stringent protocols to safeguard shipments during transit. Additionally, we offer insurance options for added peace of mind.
-                                            </p>
-                                        </div><!-- /.inner -->
-                                    </div>
+                            </div>
+                            <div class="accrodion last-chiled">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> Can I track my shipment?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Yes, we provide advanced tracking systems that allow you to monitor the status and location of your shipments in real-time. You can access the tracking information through our website or contact our customer support for assistance.
+                                        </p>
+                                    </div><!-- /.inner -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
+                <div class="col-xl-6 col-lg-6">
+                    <div class="faq-one__single">
+                        <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-2">
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> What is the expected delivery time for international shipments?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Delivery times vary depending on the mode of transportation and the destination. Our team will provide you with an estimated delivery time when you request a quote. Factors such as customs clearance and local regulations can also impact delivery schedules.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> How do I pay for your logistics services?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            We offer multiple payment options, including online payments through our secure portal, bank transfers, and traditional methods such as cheques. Details for each payment method are provided on your invoice, and our finance department is available to assist with any payment-related inquiries.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion last-chiled">
+                                <div class="accrodion-title">
+                                    <h4><span class="fa fa-ship"></span> What measures do you take to ensure the security of shipments?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            We prioritize the security of your goods. Our facilities are equipped with state-of-the-art security systems, and our team follows stringent protocols to safeguard shipments during transit. Additionally, we offer insurance options for added peace of mind.
+                                        </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--FAQ One End-->
-
-      
 
 
+        </div>
+    </section>
+    <!--FAQ One End-->
 
-        <!-- Footer Start-->
-        <?php include('components/footer.php') ?>
-        <!-- Footer End-->
+
+
+
+
+    <!-- Footer Start-->
+    <?php include('components/footer.php') ?>
+    <!-- Footer End-->
 
 
     </div><!-- /.page-wrapper -->
 
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/logo.png" width="143" alt="logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:1234567890">+1(206) 638-3417</a>
-                </li>
-            </ul>
-      
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
+    <?php include('./components/sidenav.php') ?>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>

@@ -1,5 +1,5 @@
-<?php include('../../saver/connection.php');
-include('../../saver/authorization.php'); ?>
+<?php include('../../server/connection.php');
+include('../../server/authorization.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +8,7 @@ include('../../saver/authorization.php'); ?>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Dashboard - <?php echo $sitename
- ?></title>
+                      ?></title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,24 +32,23 @@ include('../../saver/authorization.php'); ?>
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-                           rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-<style>
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
 
-  *{
-    font-family:'Poppins', sans-serif;
-  }
-  a{
-     text-transform:capitalize;
-     font-weight:300;
-  }
-   
-</style>
+    a {
+      text-transform: capitalize;
+      font-weight: 300;
+    }
+  </style>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -78,11 +77,11 @@ include('../../saver/authorization.php'); ?>
           </a>
         </li><!-- End Search Icon-->
 
-        
+
 
         <
 
-      </ul>
+          </ul>
     </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
@@ -152,28 +151,28 @@ include('../../saver/authorization.php'); ?>
                           <tr>
                             <th scope="row"><a href="#"><?php echo $count;; ?></a></th>
                             <td><?php echo $details['sender_name']; ?></td>
-                            <td><?php echo $details['sender_email']; ?></td>                            
-                            <td><?php echo $details['receiver_name']; ?></td>                            
+                            <td><?php echo $details['sender_email']; ?></td>
+                            <td><?php echo $details['receiver_name']; ?></td>
                             <td><?php echo $details['track']; ?></td>
                             <td>
 
-                               <div style="display:flex; gap:20px">
-                                  <a href="../view/?track=<?php echo $details['track']; ?>"><span class="badge " style="background-color:blue;padding:7px;">View</span></a>
+                              <div style="display:flex; gap:20px">
+                                <a href="../view/?track=<?php echo $details['track']; ?>"><span class="badge " style="background-color:blue;padding:7px;">View</span></a>
 
-                            <a onclick="return confirm('Are you sure')" href="?del=<?php echo $details['id']; ?>&track=<?php echo $details['track']; ?>">
-                                <span class="badge" style="background-color:red;padding:7px;">Delete</span>
-                              </a>
+                                <a onclick="return confirm('Are you sure')" href="?del=<?php echo $details['id']; ?>&track=<?php echo $details['track']; ?>">
+                                  <span class="badge" style="background-color:red;padding:7px;">Delete</span>
+                                </a>
 
-                            <a href="../manage/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Manage</span></a>
+                                <a href="../manage/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Manage</span></a>
 
-                            <a href="../board/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Billboard</span></a>
+                                <a href="../issues/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Issues</span></a>
 
-                            <a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a>
-                               </div>
+                                <a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a>
+                              </div>
 
                             </td>
 
-                            
+
 
 
                           </tr>

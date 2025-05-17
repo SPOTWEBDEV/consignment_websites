@@ -1,12 +1,13 @@
-﻿<?php include('./saver/connection.php') ?>
+﻿<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
 
 
 <!-- Mirrored from thetestingstudio.com/logispeed/tracking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:46 GMT -->
+
 <head>
-     <!-- Responsive -->
+    <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-   
+
 
 
     <!-- css styles -->
@@ -42,7 +43,7 @@
 
     <div class="page-wrapper">
 
-    <?php include('components/header2.php')  ?>
+        <?php include('components/header2.php')  ?>
 
         <div class="stricky-header stricked-menu main-menu main-menu-three">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -51,7 +52,7 @@
         <section class="page-header">
             <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
             </div>
-            
+
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
@@ -66,15 +67,15 @@
         <!--Page Header End-->
 
 
-        
-       
-      
+
+
+
 
         <section class="tracking">
             <div class="container-auto">
                 <div class="tracking__inner">
                     <div class="col-md-12">
-                         <h2 class="white-text mb-30">Track Your package</h2>
+                        <h2 class="white-text mb-30">Track Your package</h2>
                         <form action="display.php">
                             <div class="row">
                                 <div class="col-xl-7">
@@ -89,50 +90,20 @@
                             </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
 
 
         <!-- Footer Start-->
-            <?php  include('components/footer.php') ?>
+        <?php include('components/footer.php') ?>
         <!-- Footer End-->
 
     </div><!-- /.page-wrapper -->
 
 
-      <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/logo.png" width="143" alt="logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:1234567890">+1(206) 638-3417</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
+    <?php include('./components/sidenav.php') ?>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
@@ -186,4 +157,5 @@
 </body>
 
 <!-- Mirrored from thetestingstudio.com/logispeed/tracking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:10:46 GMT -->
+
 </html>

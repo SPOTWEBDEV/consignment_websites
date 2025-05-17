@@ -1,6 +1,7 @@
-﻿<?php include('./saver/connection.php') ?>
+﻿<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Responsive -->
     <meta charset="UTF-8">
@@ -13,10 +14,10 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-   
 
-       <link rel="stylesheet" href="assets/css/blog.css">
-        <!-- css styles -->
+
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <!-- css styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive-style.css">
 </head>
@@ -28,7 +29,7 @@
 
 
     <div class="page-wrapper">
-    <?php  include('components/header2.php')  ?>
+        <?php include('components/header2.php')  ?>
 
         <div class="stricky-header stricked-menu main-menu main-menu-three">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -37,7 +38,7 @@
         <section class="page-header">
             <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
             </div>
-            
+
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
@@ -62,7 +63,7 @@
                                     <div class="blog-img">
                                         <a href="blog-details.html">
                                             <img src="assets/images/blogs/supply-chain2.jpg"
-                                                 alt="Supply Chain">
+                                                alt="Supply Chain">
                                         </a>
                                         <ul class="post-categories">
                                             <li><a href="">Supply Chain</a></li>
@@ -79,16 +80,16 @@
                                                 </li>
                                                 <li>
                                                     <div class="blog-date">
-                                                        <i class="fas fa-calendar"></i>  July 08, 2023
+                                                        <i class="fas fa-calendar"></i> July 08, 2023
                                                     </div>
                                                 </li>
                                                 <li><i class="fas fa-comment"></i> 89</li>
                                             </ul>
                                         </div>
                                         <div class="blog-desc">
-                                            Supply Chain Management is the management of the flow of goods and services, including the movement and storage of raw materials, work-in-process inventory, and finished goods, from the point of origin to the point of consumption.  
+                                            Supply Chain Management is the management of the flow of goods and services, including the movement and storage of raw materials, work-in-process inventory, and finished goods, from the point of origin to the point of consumption.
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +98,7 @@
                                     <div class="blog-img">
                                         <a href="blog-details.html">
                                             <img src="assets/images/blogs/right-logistics.jpg"
-                                                 alt="Logistics Partner">
+                                                alt="Logistics Partner">
                                         </a>
                                         <ul class="post-categories">
                                             <li><a href="">Logistics Partner</a></li>
@@ -114,7 +115,7 @@
                                                 </li>
                                                 <li>
                                                     <div class="blog-date">
-                                                        <i class="fas fa-calendar"></i>  July 08, 2023
+                                                        <i class="fas fa-calendar"></i> July 08, 2023
                                                     </div>
                                                 </li>
                                                 <li><i class="fas fa-comment"></i> 89</li>
@@ -123,7 +124,7 @@
                                         <div class="blog-desc">
                                             Selecting the right logistics partner is crucial for the smooth operation of your supply chain and can significantly impact your overall business performance. Here are key factors to consider when choosing a logistics partner.
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +133,7 @@
                                     <div class="blog-img">
                                         <a href="blog-details.html">
                                             <img src="assets/images/blogs/technology.jpg"
-                                                 alt="Technology">
+                                                alt="Technology">
                                         </a>
                                         <ul class="post-categories">
                                             <li><a href="blog-details.html">Technology</a></li>
@@ -149,16 +150,16 @@
                                                 </li>
                                                 <li>
                                                     <div class="blog-date">
-                                                        <i class="fas fa-calendar"></i>  July 08, 2023
+                                                        <i class="fas fa-calendar"></i> July 08, 2023
                                                     </div>
                                                 </li>
                                                 <li><i class="fas fa-comment"></i> 89</li>
                                             </ul>
                                         </div>
                                         <div class="blog-desc">
-                                           Technology plays a pivotal role in transforming and optimizing the logistics industry, enhancing efficiency, visibility, and overall supply chain management.
+                                            Technology plays a pivotal role in transforming and optimizing the logistics industry, enhancing efficiency, visibility, and overall supply chain management.
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -180,119 +181,89 @@
                     </div>
                     <div class="col-lg-4 col-md-12 order-last">
                         <div class="widget-area-blogsidebar">
-                            
-                            
-                               
-                            </div>
-                            <div class="recent-posts mb-50">
-                                <div class="widget-title">
-                                    <h3 class="title mb-50">Popular Posts</h3>
-                                </div>
-                                <div class="recent-post-widget no-border">
-                                    <div class="post-img">
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blogs/right-logistics.jpg"
-                                                 alt="Logistics Partner">
-                                        </a>
-                                    </div>
-                                    <div class="post-desc">
-                                        <a href="blog-details.html"> Choosing the Right Logistics Partner</a>
-                                        <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
-                                    </div>
-                                </div>
-                                <div class="recent-post-widget">
-                                    <div class="post-img">
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blogs/technology.jpg"
-                                                 alt="Technology in Logistics">
-                                        </a>
-                                    </div>
-                                    <div class="post-desc">
-                                        <a href="blog-details.html">
-                                            The Role of Technology in Logistics
-                                        </a>
-                                        <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
-                                    </div>
-                                </div>
-                                <div class="recent-post-widget">
-                                    <div class="post-img">
-                                        <a href="blog-details.html">
-                                            <img src="assets/images/blogs/warehouse.jpg"
-                                                 alt="Efficient Coldstorage">
-                                        </a>
-                                    </div>
-                                    <div class="post-desc">
-                                        <a href="blog-details.html">Tips for Efficient Warehousing</a>
-                                        <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
-                                    </div>
-                                </div>
-                            </div>
-                           
+
+
 
                         </div>
+                        <div class="recent-posts mb-50">
+                            <div class="widget-title">
+                                <h3 class="title mb-50">Popular Posts</h3>
+                            </div>
+                            <div class="recent-post-widget no-border">
+                                <div class="post-img">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/blogs/right-logistics.jpg"
+                                            alt="Logistics Partner">
+                                    </a>
+                                </div>
+                                <div class="post-desc">
+                                    <a href="blog-details.html"> Choosing the Right Logistics Partner</a>
+                                    <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
+                                </div>
+                            </div>
+                            <div class="recent-post-widget">
+                                <div class="post-img">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/blogs/technology.jpg"
+                                            alt="Technology in Logistics">
+                                    </a>
+                                </div>
+                                <div class="post-desc">
+                                    <a href="blog-details.html">
+                                        The Role of Technology in Logistics
+                                    </a>
+                                    <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
+                                </div>
+                            </div>
+                            <div class="recent-post-widget">
+                                <div class="post-img">
+                                    <a href="blog-details.html">
+                                        <img src="assets/images/blogs/warehouse.jpg"
+                                            alt="Efficient Coldstorage">
+                                    </a>
+                                </div>
+                                <div class="post-desc">
+                                    <a href="blog-details.html">Tips for Efficient Warehousing</a>
+                                    <span class="date-post"> <i class="fas fa-calendar"></i> July 08, 2023 </span>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End of blog post section
+    </div>
+    <!-- End of blog post section
         ============================================= -->
 
-           <section class="tracking">
-            <div class="container-auto">
-                <div class="tracking__inner">
-                    <div class="tracking-shape-4 float-bob-y">
-                        <img src="assets/images/shapes/tracking-shape-4.png" alt="logistics">
-                    </div>
-                    <div class="tracking__left">
-                        <div class="tracking__content">
-                            <h3 class="tracking__title">Let Us Move You With Honesty And Greatness.</h3>
-                        </div>
-                    </div>
-                    <div class="tracking__btn-box">
-                        <a href="contact.html" class="thm-btn tracking__btn">Contact Us</a>
+    <section class="tracking">
+        <div class="container-auto">
+            <div class="tracking__inner">
+                <div class="tracking-shape-4 float-bob-y">
+                    <img src="assets/images/shapes/tracking-shape-4.png" alt="logistics">
+                </div>
+                <div class="tracking__left">
+                    <div class="tracking__content">
+                        <h3 class="tracking__title">Let Us Move You With Honesty And Greatness.</h3>
                     </div>
                 </div>
+                <div class="tracking__btn-box">
+                    <a href="contact.html" class="thm-btn tracking__btn">Contact Us</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        
-        <?php  include('components/footer.php')  ?>
+
+    <?php include('components/footer.php')  ?>
 
 
     </div><!-- /.page-wrapper -->
 
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/logo.png" width="143" alt="logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:support@<?php echo  $sitename ?>.com">support@<?php echo  $sitename ?>.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:+1(206) 638-3417"></a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
+    <?php include('./components/sidenav.php') ?>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>

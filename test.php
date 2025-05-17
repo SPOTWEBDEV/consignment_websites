@@ -241,30 +241,12 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
             }
 
             /* Blink effect */
-            .blink {
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-            }
-
-
-
-
-            .blink.red {
-                background-color: red;
-            }
-
-            .blink.green {
-                background-color: green;
-            }
-
             .status {
                 width: fit-content;
                 padding: 5px 20px;
                 border-radius: 7px;
-                color: white;
+                color:white;           
             }
-
             .status.red {
                 background-color: red;
             }
@@ -325,7 +307,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td data-label="full-name">Shipping Weight (kg)</td>
+                                        <td data-label="full-name">Shipping Weight</td>
                                         <td data-label="full-name"> <?php echo $message['weight'];  ?></td>
                                     </tr>
                                     <tr>
@@ -334,7 +316,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
                                     </tr>
                                     <tr>
                                         <td data-label="full-name">Shipping Insurance:</td>
-                                        <td data-label="full-name"> We always make sure that your package gets to its door step</td>
+                                        <td data-label="full-name"> we always make sure that your package gets to its door step</td>
                                     </tr>
                                     <tr>
                                         <td data-label="full-name">Shipping Date:</td>
@@ -515,7 +497,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
                                             <td class="dont" data-label="Previouse-Location:" id="return">
                                                 <div class="last"><?php echo $message['country']; ?></div>
-                                                <div class="blink red" style="background:red"></div>
+                                                <div class="blink" style="background:red"></div>
                                             </td>
 
 
@@ -526,7 +508,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
                                             <td class="dont" data-label="Current-Location" id="return">
                                                 <div class="last"><?php echo $message['country']; ?></div>
-                                                <div class="blink green" style="background:green"></div>
+                                                <div class="blink" style="background:green"></div>
                                             </td>
 
 
@@ -546,7 +528,6 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
 
                         </table>
-
                         <h2 class="table-title">Issues</h2>
                         <table class="table">
                             <thead>
@@ -569,7 +550,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
                                     <tr>
                                         <td data-label="Description"><?php echo $message['description'];  ?></td>
                                         <td data-label="Status" id="return">
-                                            <button class="status <?php echo ($message['status'] == 'pending') ? 'red' : 'green'  ?>"><?php echo $message['status'];  ?></button>
+                                            <button class="blink <?php echo ($message['status'] == 'pending')? 'red':'green'  ?>"><?php echo $message['status'];  ?></button>
                                         </td>
                                     </tr>
 

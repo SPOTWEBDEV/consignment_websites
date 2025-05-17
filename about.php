@@ -1,21 +1,22 @@
-﻿<?php include('./saver/connection.php') ?>
+﻿<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-       <!-- Responsive -->
+    <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="<?php echo $sitename   ?> - Transportaion Html Responsive Template">
-    <title><?php echo  $sitename ?> |  About Us </title>
+    <title><?php echo  $sitename ?> | About Us </title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-   
 
-     <!-- css styles -->
+
+    <!-- css styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive-style.css">
 </head>
@@ -47,7 +48,7 @@
         <section class="page-header">
             <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
             </div>
-          
+
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
@@ -81,7 +82,7 @@
                                     Beyond shipping & tranasport service
                                 </h2>
                             </div>
-                            
+
                             <p class="about-three__text">
                                 We strongly support best practice sharing across our operations around the world and across various industrial sectors. Sed eget tincidunt ipsum. There
                                 are many variations of passages of psum available, but the majority have alteration in
@@ -94,27 +95,27 @@
                                 <div class="about-three__business-start-text-box">
                                     <p class="about-three__business-start-text">
                                         25+ Years of Experience in <span>logistics</span> services
-                                       
+
                                     </p>
                                 </div>
                             </div>
-                             <p class="about-three__text">
-                               Recognizing that every business is unique, we don't offer one-size-fits-all solutions. Our experienced team works closely with you to understand your specific logistics needs, providing customized solutions that align with your industry, size, and goals.
+                            <p class="about-three__text">
+                                Recognizing that every business is unique, we don't offer one-size-fits-all solutions. Our experienced team works closely with you to understand your specific logistics needs, providing customized solutions that align with your industry, size, and goals.
                             </p>
-                           
+
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="about-three__right">
                             <div class="about-three__img-box wow slideInLeft" data-wow-delay="100ms"
-                                 data-wow-duration="2500ms">
+                                data-wow-duration="2500ms">
                                 <div class="about-three__img">
                                     <img src="assets/images/about/ab3.jpg" alt="about us">
                                 </div>
-                               
+
                                 <div class="about-three__location">
                                     <div class="about-three__location-bg"
-                                         style="background-image: url(assets/images/shapes/about-three-shape-2.png);">
+                                        style="background-image: url(assets/images/shapes/about-three-shape-2.png);">
                                     </div>
                                     <p class="about-three__location-text">Over 150 <br> Locations <br> Worldwide</p>
                                 </div>
@@ -125,11 +126,11 @@
             </div>
         </section>
         <!--About Four End-->
-      
-    <!--Counter  Start-->
+
+        <!--Counter  Start-->
         <section class="counter-two">
             <div class="counter-two__bg-box">
-                
+
             </div>
             <div class="container">
                 <div class="row">
@@ -203,7 +204,7 @@
         <!--Counter  End-->
 
 
-       <section class="services-two">
+        <section class="services-two">
             <div class="services-two-shape-1"
                 style="background-image: url(assets/images/backgrounds/quotebg.jpg);"></div>
             <div class="container">
@@ -224,13 +225,13 @@
                                     <h2 class="section-title__title white-text">Moving your products across borders</h2>
                                     <p class="white-text mt-20">We understand that choosing the right logistics partner is crucial for the success and efficiency of your business.
 
-We pride ourselves on being a reliable and consistent logistics partner. Your shipments are not just packages; they are promises. We deliver on time, every time, ensuring that your business operations run smoothly without disruptions.
+                                        We pride ourselves on being a reliable and consistent logistics partner. Your shipments are not just packages; they are promises. We deliver on time, every time, ensuring that your business operations run smoothly without disruptions.
 
-Recognizing that every business is unique, we don't offer one-size-fits-all solutions. Our experienced team works closely with you to understand your specific logistics needs, providing customized solutions that align with your industry, size, and goals.</p>
+                                        Recognizing that every business is unique, we don't offer one-size-fits-all solutions. Our experienced team works closely with you to understand your specific logistics needs, providing customized solutions that align with your industry, size, and goals.</p>
                                 </div>
                             </div>
                         </div>
-                     
+
                     </div>
                 </div>
                 <div class="services-two__bottom">
@@ -288,7 +289,7 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
                             </div>
                         </div>
                         <!--Services Two Single End-->
-                       
+
                     </div>
                 </div>
             </div>
@@ -296,76 +297,76 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
 
 
         <div class="team-details__bottom">
-                    <div class="row">
+            <div class="row">
 
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="team-details__bottom-right">
-                               <div class="benefits-two__img">
-                                <img src="assets/images/about/ab5.jpg" alt="why logistics">
-                            </div> 
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="team-details__bottom-left">
-                                 <div class="section-title text-left">
-                    <div class="section-sub-title-box">
-                        <p class="section-sub-title">We Chooese us</p>
-                        <div class="section-title-shape-1">
-                            <img src="assets/images/shapes/section-title-shape-1.png" alt="why choose logistics">
-                        </div>
-                        <div class="section-title-shape-2">
-                            <img src="assets/images/shapes/section-title-shape-2.png" alt="why choose logistics">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="team-details__bottom-right">
+                        <div class="benefits-two__img">
+                            <img src="assets/images/about/ab5.jpg" alt="why logistics">
                         </div>
                     </div>
-                    <h2 class="section-title__title">Why Choose Us for Logistics & Transportation</h2>
                 </div>
-                                
-                                <p class="team-details__bottom-left-text">
-                                    We provides our clients excellent, trustworthy and safe logistics services, having all you need to insure your freight without depending where the destination is or how big is the shipment.
+                <div class="col-xl-6 col-lg-6">
+                    <div class="team-details__bottom-left">
+                        <div class="section-title text-left">
+                            <div class="section-sub-title-box">
+                                <p class="section-sub-title">We Chooese us</p>
+                                <div class="section-title-shape-1">
+                                    <img src="assets/images/shapes/section-title-shape-1.png" alt="why choose logistics">
+                                </div>
+                                <div class="section-title-shape-2">
+                                    <img src="assets/images/shapes/section-title-shape-2.png" alt="why choose logistics">
+                                </div>
+                            </div>
+                            <h2 class="section-title__title">Why Choose Us for Logistics & Transportation</h2>
+                        </div>
 
-                                </p>
-                                <p class="team-details__bottom-left-text">
-                                    We offer a comprehensive range of logistics services, including but not limited to air freight, sea freight, road freight, warehousing, customs clearance, temperature-controlled cargo, and supply chain solutions. Our goal is to provide end-to-end logistics support for businesses of all sizes.
-                                </p>
-                                <br>
-                                <div class="team-details__progress">
-                                    <div class="team-details__progress-single">
-                                        <h4 class="team-details__progress-title">A world-class port</h4>
-                                        <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="90%">
-                                                <div class="count-text">90%</div>
-                                            </div>
-                                        </div>
+                        <p class="team-details__bottom-left-text">
+                            We provides our clients excellent, trustworthy and safe logistics services, having all you need to insure your freight without depending where the destination is or how big is the shipment.
+
+                        </p>
+                        <p class="team-details__bottom-left-text">
+                            We offer a comprehensive range of logistics services, including but not limited to air freight, sea freight, road freight, warehousing, customs clearance, temperature-controlled cargo, and supply chain solutions. Our goal is to provide end-to-end logistics support for businesses of all sizes.
+                        </p>
+                        <br>
+                        <div class="team-details__progress">
+                            <div class="team-details__progress-single">
+                                <h4 class="team-details__progress-title">A world-class port</h4>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="90%">
+                                        <div class="count-text">90%</div>
                                     </div>
-                                    <div class="team-details__progress-single">
-                                        <h4 class="team-details__progress-title">Available on 20+ countries.</h4>
-                                        <div class="bar">
-                                            <div class="bar-inner count-bar" data-percent="85%">
-                                                <div class="count-text">85%</div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="team-details__progress-single">
+                                <h4 class="team-details__progress-title">Available on 20+ countries.</h4>
+                                <div class="bar">
+                                    <div class="bar-inner count-bar" data-percent="85%">
+                                        <div class="count-text">85%</div>
                                     </div>
-                                    <div class="team-details__progress-single">
-                                        <h4 class="team-details__progress-title">499+ professinals are available.</h4>
-                                        <div class="bar marb-0">
-                                            <div class="bar-inner count-bar" data-percent="90%">
-                                                <div class="count-text">90%</div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="team-details__progress-single">
+                                <h4 class="team-details__progress-title">499+ professinals are available.</h4>
+                                <div class="bar marb-0">
+                                    <div class="bar-inner count-bar" data-percent="90%">
+                                        <div class="count-text">90%</div>
                                     </div>
-                                     <div class="team-details__progress-single">
-                                        <h4 class="team-details__progress-title">1000+ projects has been completed.</h4>
-                                        <div class="bar marb-0">
-                                            <div class="bar-inner count-bar" data-percent="85%">
-                                                <div class="count-text">85%</div>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="team-details__progress-single">
+                                <h4 class="team-details__progress-title">1000+ projects has been completed.</h4>
+                                <div class="bar marb-0">
+                                    <div class="bar-inner count-bar" data-percent="85%">
+                                        <div class="count-text">85%</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
         <!--Brand One Start-->
         <section class="brand-one">
             <div class="container">
@@ -443,10 +444,10 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
         </section>
         <!--Brand One End-->
         <!--Team Three Start-->
-      
+
         <!--Team Three End-->
 
-           <section class="tracking">
+        <section class="tracking">
             <div class="container-auto">
                 <div class="tracking__inner">
                     <div class="tracking-shape-4 float-bob-y">
@@ -464,43 +465,16 @@ Recognizing that every business is unique, we don't offer one-size-fits-all solu
             </div>
         </section>
 
-        
-     <!-- Footer Start-->
-     <?php  include('components/footer.php') ?>
+
+        <!-- Footer Start-->
+        <?php include('components/footer.php') ?>
         <!-- Footer End-->
 
 
     </div><!-- /.page-wrapper -->
 
 
-   <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/logo.png" width="143" alt="logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:<?php echo $siteemail ?>"><?php echo  $siteemail ?></a>
-                </li>
-                
-            </ul>
-          
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
+    <?php include('./components/sidenav.php') ?>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>

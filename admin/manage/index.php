@@ -1,5 +1,25 @@
-<?php include('../../saver/connection.php');
-include('../../saver/authorization.php'); ?>
+<?php include('../../server/connection.php');
+include('../../server/authorization.php');
+
+
+
+if(isset($_GET['track'])){
+    $track =  $_GET['track'];
+
+    $query = mysqli_query($connection,"SELECT * FROM `user` WHERE `track`='$track'");
+
+
+
+    if(!mysqli_num_rows($query)){
+        echo "<script>
+        alert('Invalid Track ID')
+        setTimeout(()=>{window.open('../list', '_self')},0);</script>";
+    }
+}
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

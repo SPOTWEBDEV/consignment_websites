@@ -1,5 +1,5 @@
-<?php include('../../saver/connection.php');
-include('../../saver/authorization.php'); ?>
+<?php include('../../server/connection.php');
+include('../../server/authorization.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,121 +33,131 @@ include('../../saver/authorization.php'); ?>
 <body class="section-bg-one">
 
     <?php
-
     $track = $_GET['track'];
     $sql = mysqli_query($connection, "SELECT details.*, user.* 
-        FROM details 
-        JOIN user ON details.track = user.track
-        WHERE details.track = '$track' AND user.track = '$track'");
+    FROM details 
+    JOIN user ON details.track = user.track
+    WHERE details.track = '$track' AND user.track = '$track'");
 
     while ($info = mysqli_fetch_assoc($sql)) {
-
-
     ?>
 
-    <main class="container invoice-wrapper" id="download-section">
-        <!-- invoice Top -->
-        <div class="invoice-top">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center text-sm-start mb-3 mb-sm-1">
-                    <a href="index.html"><img style="height: 85px;" src="<?php  echo $domain ?>assets/images/logo_2.png" title="invoice" alt="invoice"></a>
-                </div>
-                <hr>
-                <div class="col-sm-6"><strong>Note:</strong> for enquires for any kind of issues contact<strong>:</strong> <br><?php echo  $siteemail ?> <br>+1 (206) 638-3417 <br> </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-6"><strong>Date:</strong> <?php echo $info['shippment_date'] ?></div>
-                    <div class="col-sm-6 text-sm-end"> <strong>Invoice No:</strong> <?php echo $info['track'] ?></div>
-                </div>
-                <hr>
-            </div>
-            <hr>
-            <!-- invoice Details -->
-            <div class="invoice-details border-top mt-20 pt-20">
-                <div class="row">
-                    <div class="col-sm-6 text-sm-end order-sm-1">
-                        <strong class="text-18 mb-3 d-inline-block">Sender info:</strong>
-                        <address class="mb-4">
-                            <strong>Name:</strong> <?php echo $info['sender_name'] ?><br>
-                            <strong>Phone:</strong> <?php echo $info['sender_phone'] ?><br>
-                            <strong>Email:</strong> <?php echo $info['sender_email'] ?><br>
-                            <strong>Address: </strong><?php echo $info['sender_address'] ?>
-                        </address>
+        <main class="container invoice-wrapper" id="download-section">
+            <!-- Invoice Top -->
+            <div class="invoice-top">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 text-center text-sm-start mb-3 mb-sm-1">
+                        <a href="index.html"><img style="height: 85px;" src="<?php echo $domain ?>assets/images/logo_2.png" title="Invoice" alt="Invoice"></a>
                     </div>
-                    <div class="col-sm-6 order-sm-0">
-                        <strong class="text-18 mb-3 d-inline-block">Shippment To:</strong>
-                        <address class="mb-4">
-                            <strong>Name:</strong> <?php echo $info['receiver_name'] ?><br>
-                            <strong>Phone:</strong> <?php echo $info['receiver_phone'] ?><br>
-                            <strong>Email:</strong> <?php echo $info['receiver_email'] ?><br>
-                            <strong>Address:</strong> <?php echo $info['receiver_address'] ?>
-                        </address>
+                    <hr>
+                    <div class="col-sm-6">
+                        <strong>Note:</strong> For inquiries or any kind of issues, contact: <br>
+                        <strong><?php echo $siteemail ?></strong><br>
+                        +1 (206) 638-3417
                     </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6"><strong>Date:</strong> <?php echo $info['shippment_date'] ?></div>
+                        <div class="col-sm-6 text-sm-end"><strong>Invoice No:</strong> <?php echo $info['track'] ?></div>
+                    </div>
+                    <hr>
                 </div>
-            </div>
-            <!-- invoice descriptions -->
-            <div class="card mb-3">
-                <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <table class="table mb-0">
-                            <thead class="card-header">
-                                <tr>
-                                    <td class="col-3"><strong>Weight (kg)</strong></td>
-                                    <td class="col-3"><strong style="white-space: nowrap;">Tracking Number</strong></td>
-                                    <td class="col-4"><strong>Description</strong></td>
-                                    <td class="col-2 text-center" style="white-space: nowrap;"><strong>Shipping From</strong></td>
-                                    <td class="col-1 text-center"><strong>Destination</strong></td>
-                                    <td class="col-1 text-center" style="white-space: nowrap;"><strong>Arrival Date</strong></td>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="col-3"><?php echo $info['weight'] ?></td>
-                                    <td class="col-3"><?php echo $info['track'] ?></td>
-                                    <td class="col-4"><?php echo $info['description'] ?></td>
-                                    <td class="col-2 text-center"><?php echo $info['current_country'] ?></td>
-                                    <td class="col-1 text-center"><?php echo $info['destination'] ?></td>
-                                    <td class="col-1 text-center"><?php echo $info['arrival_date'] ?></td>
-
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr class="">
-                                    <td colspan="5" class="text-end"><strong>Sub Total:</strong></td>
-                                    <td>International Shipping Fee Of <?php echo $money . number_format($info['paid_fee'],2) ?> Paid</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5" class="text-end border-bottom-0"><strong>Total: </strong></td>
-                                    <td><?php echo $money .  number_format($info['total_fee'],2) ?></td>
-                                </tr>
-
-                            </tfoot>
-                        </table>
+                <!-- Invoice Details -->
+                <div class="invoice-details border-top mt-20 pt-20">
+                    <div class="row">
+                        <div class="col-sm-6 text-sm-end order-sm-1">
+                            <strong class="text-18 mb-3 d-inline-block">Sender Info:</strong>
+                            <address class="mb-4">
+                                <strong>Name:</strong> <?php echo $info['sender_name'] ?><br>
+                                <strong>Phone:</strong> <?php echo $info['sender_phone'] ?><br>
+                                <strong>Email:</strong> <?php echo $info['sender_email'] ?><br>
+                                <strong>Address:</strong> <?php echo $info['sender_address'] ?>
+                            </address>
+                        </div>
+                        <div class="col-sm-6 order-sm-0">
+                            <strong class="text-18 mb-3 d-inline-block">Shipment To:</strong>
+                            <address class="mb-4">
+                                <strong>Name:</strong> <?php echo $info['receiver_name'] ?><br>
+                                <strong>Phone:</strong> <?php echo $info['receiver_phone'] ?><br>
+                                <strong>Email:</strong> <?php echo $info['receiver_email'] ?><br>
+                                <strong>Address:</strong> <?php echo $info['receiver_address'] ?>
+                            </address>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Invoice Table -->
+                <div class="card mb-3">
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead class="card-header">
+                                    <tr>
+                                        <td class="col-3"><strong>Weight (kg)</strong></td>
+                                        <td class="col-3"><strong>Tracking Number</strong></td>
+                                        <td class="col-4"><strong>Description</strong></td>
+                                        <td class="col-2 text-center"><strong>Shipping From</strong></td>
+                                        <td class="col-1 text-center"><strong>Destination</strong></td>
+                                        <td class="col-1 text-center"><strong>Arrival Date</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><?php echo $info['weight'] ?></td>
+                                        <td><?php echo $info['track'] ?></td>
+                                        <td><?php echo $info['description'] ?></td>
+                                        <td class="text-center"><?php echo $info['current_country'] ?></td>
+                                        <td class="text-center"><?php echo $info['destination'] ?></td>
+                                        <td class="text-center"><?php echo $info['arrival_date'] ?></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="text-end"><strong>Paid Fee:</strong></td>
+                                        <td><?php echo $money . number_format($info['paid_fee'], 2) ?> (Paid)</td>
+                                    </tr>
+                                    <?php
+
+                                    if ($info['total_fee'] != $info['paid_fee']) { ?>
+
+                                        <tr>
+                                            <td colspan="5" class="text-end"><strong>Unpaid Amount:</strong></td>
+                                            <td><?php echo number_format($info['total_fee'] - $info['paid_fee'], 2) ?></td>
+                                        </tr>
+
+                                    <?php }
+
+                                    ?>
+
+                                    <tr>
+                                        <td colspan="5" class="text-end border-bottom-0"><strong>Total Fee:</strong></td>
+                                        <td><?php echo $money . number_format($info['total_fee'], 2) ?></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
         </main>
 
-    <?php }
+    <?php } ?>
 
-    ?>
-    <!-- invoice Bottom  -->
+    <!-- Invoice Bottom -->
     <div class="text-center mt-5 mb-4 regular-button">
         <div class="d-print-none d-flex justify-content-center flex-wrap gap-10">
-
             <a href="javascript:window.print()" class="btn-primary-fill">Print Invoice</a>
             <a href="../dashboard/" class="btn-primary-fill">Home</a>
         </div>
     </div>
 
-    <!-- jquery-->
+    <!-- Scripts -->
     <script src="assets/js/jquery-3.7.0.min.js"></script>
-    <!-- Plugin -->
     <script src="assets/js/plugin.js"></script>
-    <!-- Main js-->
     <script src="assets/js/mian.js"></script>
+
 </body>
+
 
 
 </html>

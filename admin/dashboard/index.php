@@ -1,4 +1,4 @@
-<?php  include('../../saver/connection.php'); include('../../saver/authorization.php'); ?>
+<?php  include('../../server/connection.php'); include('../../server/authorization.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 

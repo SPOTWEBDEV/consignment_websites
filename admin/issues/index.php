@@ -1,5 +1,5 @@
-<?php include('../../saver/connection.php');
-include('../../saver/authorization.php'); ?>
+<?php include('../../server/connection.php');
+include('../../server/authorization.php'); ?>
 <?php
 
 
@@ -25,7 +25,7 @@ function generateRandomFACCode($num)
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Dashboard - <?php echo $sitename
- ?></title>
+                        ?></title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -83,11 +83,11 @@ function generateRandomFACCode($num)
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1> New Shippmet </h1>
+            <h1> Add Issues </h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item">new Shippmet</li>
+                    <li class="breadcrumb-item">Add Issues</li>
 
                 </ol>
             </nav>
@@ -102,13 +102,37 @@ function generateRandomFACCode($num)
                         <div class="card-body">
                             <h5 class="card-title">Shipent billoard</h5>
 
+                            <?php
+
+                            if (isset($_POST['summit'])) {
+
+                                $track = $_GET['track'];
+                                $status = $_POST['status'];
+                                $description = $_POST['description'];
+
+                                $query = mysqli_query($connection, "INSERT INTO `issues`(`description`, `track`,`status`) VALUES ('$description','$track','$status')");
+
+                                if ($query) {
+
+                                    echo "<script> location.href='../list/'  </script> ";
+                                } else {
+
+
+                                    echo "<script> alert('UNABLE TO DELETE')  </script> ";
+                                }
+                            }
+                            ?>
+
                             <!-- Vertical Form -->
                             <form class="row g-3" method="POST">
 
                                 <!--sender information  -->
                                 <div class="col-12">
-                                    <label for="inputNanme4" class="form-label">Amount</label>
-                                    <input type="text" name="amount" class="form-control" id="inputNanme4" required>
+                                    <label for="status" class="form-label">Status</label>
+                                    <select name="status" id="status">
+                                        <option value="pending">Pending</option>
+                                        <option value="resolve">Resolve</option>
+                                    </select>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputEmail4" class="form-label">Desription</label>
@@ -153,40 +177,3 @@ function generateRandomFACCode($num)
 </body>
 
 </html>
-
-<?php
-
-
-
-if (isset($_POST['summit'])) {
-
-    $track = $_GET['track'];
-    $amount = $_POST['amount'];
-    $description = $_POST['description'];
-
-    $query = mysqli_query($connection, "INSERT INTO `bills`(`description`, `track`, `amount`) VALUES ('$description','$track','$amount')");
-
-    if ($query) {
-
-        echo "<script> location.href='../list/'  </script> ";
-    } else {
-
-
-        echo "<script> alert('UNABLE TO DELETE')  </script> ";
-    }
-}
-
-
-
-?>
-
-
-<?php
-
-if (isset($_POST['sumit'])) {
-
-
-}
-
-
-?>

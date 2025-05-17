@@ -1,8 +1,9 @@
-﻿<?php include('./saver/connection.php') ?>
+﻿<?php include('./server/connection.php') ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <!-- Responsive -->
+    <!-- Responsive -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-   
 
-          <!-- css styles -->
+
+    <!-- css styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive-style.css">
 </head>
@@ -27,7 +28,7 @@
 
 
     <div class="page-wrapper">
-    <?php  include('components/header2.php')  ?>
+        <?php include('components/header2.php')  ?>
 
         <div class="stricky-header stricked-menu main-menu main-menu-three">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -36,7 +37,7 @@
         <section class="page-header">
             <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
             </div>
-           
+
             <div class="container">
                 <div class="page-header__inner">
                     <ul class="thm-breadcrumb list-unstyled">
@@ -68,7 +69,7 @@
                                     </div>
                                 </div>
                                 <h2 class="section-title__title">Our Range of Logistic Services</h2>
-                                
+
                                 <p class="mt-20">We provides our clients excellent, trustworthy and safe logistics services, having all you need to insure your freight without depending where the destination is or how big is the shipment.</p>
                             </div>
 
@@ -214,7 +215,7 @@
                                     </div>
                                     <h2 class="service-one__title"><a href="service-details1.html">Custom Clearance</a></h2>
                                     <p class="service-one__text">
-                                       We specialize in providing efficient customs clearance services, ensuring that your shipments clear customs smoothly and reach their destination.
+                                        We specialize in providing efficient customs clearance services, ensuring that your shipments clear customs smoothly and reach their destination.
 
 
                                     </p>
@@ -334,7 +335,7 @@
             </div>
         </section>
 
-       <section class="process">
+        <section class="process">
             <div class="container">
                 <div class="section-title text-center">
                     <div class="section-sub-title-box">
@@ -419,79 +420,79 @@
                         <!--Process Single End-->
                     </div>
                 </div>
-             
+
             </div>
         </section>
 
 
 
- <section class="get-logispeed-three">
+        <section class="get-logispeed-three">
             <div class="get-logispeed-three__bg"
-                 style="background-image: url(assets/images/backgrounds/quotebg.jpg);">
+                style="background-image: url(assets/images/backgrounds/quotebg.jpg);">
             </div>
             <div class="container">
                 <div class="row">
-                 
+
                     <div class="col-xl-6 col-lg-6">
                         <div class="get-logispeed-three__left">
                             <div class="section-title text-left">
-                    <div class="section-sub-title-box">
-                        <p class=" white-text">Get a quote</p>
-                        <div class="section-title-shape-1">
-                            <img src="assets/images/shapes/section-title-shape-1.png" alt="quote">
-                        </div>
-                        <div class="section-title-shape-2">
-                            <img src="assets/images/shapes/section-title-shape-2.png" alt="quote">
-                        </div>
-                    </div>
-                    <h2 class="white-text">Get a free quote</h2>
-                </div>
+                                <div class="section-sub-title-box">
+                                    <p class=" white-text">Get a quote</p>
+                                    <div class="section-title-shape-1">
+                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="quote">
+                                    </div>
+                                    <div class="section-title-shape-2">
+                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="quote">
+                                    </div>
+                                </div>
+                                <h2 class="white-text">Get a free quote</h2>
+                            </div>
                             <div class="get-logispeed-three__content">
-                                            <form class="get-logispeed-three__form">
-                                                <div class="get-logispeed-three__content-box">
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <input type="text" placeholder="Name" name="name">
-                                                    </div>
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <input type="email" placeholder="Email" name="email">
-                                                    </div>
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <input type="text" placeholder="Phone" name="phone">
-                                                    </div>
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <input type="text" placeholder="Departure From" name="fromcity">
-                                                    </div>
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <input type="text" placeholder="Departure To" name="tocity">
-                                                    </div>
-                                                    <div class="get-logispeed-three__input-box">
-                                                        <select class="selectpicker"
-                                                                aria-label="Default select example">
-                                                            <option selected>
-                                                               Freight Type
-                                                            </option>
-                                                            <option value="1">Air Freight</option>
-                                                            <option value="2">Road Freight</option>
-                                                            <option value="3">Sea Freight</option>
-                                                            <option value=4>Warehouse</option>
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                               
-                                                <div class="get-logispeed-three__content-bottom">
-                                                    <button type="submit"
-                                                            class="thm-btn-two get-logispeed-three__btn">
-                                                        Get a Quote
-                                                        
-                                                    </button>
-                                                </div>
-
-                                            </form>
+                                <form class="get-logispeed-three__form">
+                                    <div class="get-logispeed-three__content-box">
+                                        <div class="get-logispeed-three__input-box">
+                                            <input type="text" placeholder="Name" name="name">
                                         </div>
+                                        <div class="get-logispeed-three__input-box">
+                                            <input type="email" placeholder="Email" name="email">
+                                        </div>
+                                        <div class="get-logispeed-three__input-box">
+                                            <input type="text" placeholder="Phone" name="phone">
+                                        </div>
+                                        <div class="get-logispeed-three__input-box">
+                                            <input type="text" placeholder="Departure From" name="fromcity">
+                                        </div>
+                                        <div class="get-logispeed-three__input-box">
+                                            <input type="text" placeholder="Departure To" name="tocity">
+                                        </div>
+                                        <div class="get-logispeed-three__input-box">
+                                            <select class="selectpicker"
+                                                aria-label="Default select example">
+                                                <option selected>
+                                                    Freight Type
+                                                </option>
+                                                <option value="1">Air Freight</option>
+                                                <option value="2">Road Freight</option>
+                                                <option value="3">Sea Freight</option>
+                                                <option value=4>Warehouse</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="get-logispeed-three__content-bottom">
+                                        <button type="submit"
+                                            class="thm-btn-two get-logispeed-three__btn">
+                                            Get a Quote
+
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
                     </div>
-                       <div class="col-xl-6 col-lg-6">
+                    <div class="col-xl-6 col-lg-6">
                         <div class="get-logispeed-three__right">
                             <div class="get-logispeed-three__img">
                                 <img src="assets/images/quote.jpg" alt="quote">
@@ -501,7 +502,7 @@
                 </div>
             </div>
         </section>
-   <section class="tracking">
+        <section class="tracking">
             <div class="container-auto">
                 <div class="tracking__inner">
                     <div class="tracking-shape-4 float-bob-y">
@@ -519,40 +520,13 @@
             </div>
         </section>
         <!-- Footer Start-->
-        <?php  include('components/footer.php')  ?>
+        <?php include('components/footer.php')  ?>
         <!-- Footer End-->
 
 
     </div><!-- /.page-wrapper -->
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="assets/images/logo.png" width="143" alt="logo"></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:<?php echo  $siteemail ?>"><?php echo  $siteemail ?></a>
-                </li>
-                
-            </ul><!-- /.mobile-nav__contact -->
-            
-
-
-
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
-    <!-- /.mobile-nav__wrapper -->
+    <?php include('./components/sidenav.php') ?>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
@@ -604,18 +578,20 @@
     <!-- js file -->
     <script src="assets/js/main.js"></script>
     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6756bd722480f5b4f5aaaccd/1ield82tf';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6756bd722480f5b4f5aaaccd/1ield82tf';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 

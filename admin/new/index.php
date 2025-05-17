@@ -1,5 +1,5 @@
-<?php include('../../saver/connection.php');
-include('../../saver/authorization.php'); ?>
+<?php include('../../server/connection.php');
+include('../../server/authorization.php'); ?>
 <?php
 
 // Get the number of rows from the 'user' table
