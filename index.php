@@ -1137,10 +1137,4 @@
     </script>
     <!--End of Tawk.to Script-->
 </body>
-
-
-
-
-<!-- Mirrored from thetestingstudio.com/<?php echo  $sitename ?>/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Oct 2024 03:09:05 GMT -->
-
 </html>

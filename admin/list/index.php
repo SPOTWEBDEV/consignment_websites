@@ -159,15 +159,13 @@ include('../../server/authorization.php'); ?>
                               <div style="display:flex; gap:20px">
                                 <a href="../view/?track=<?php echo $details['track']; ?>"><span class="badge " style="background-color:blue;padding:7px;">View</span></a>
 
-                                <a onclick="return confirm('Are you sure')" href="?del=<?php echo $details['id']; ?>&track=<?php echo $details['track']; ?>">
-                                  <span class="badge" style="background-color:red;padding:7px;">Delete</span>
-                                </a>
+                            
 
                                 <a href="../manage/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Manage</span></a>
 
                                 <a href="../issues/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Issues</span></a>
 
-                                <a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">stages</span></a>
+                                <a href="../stages/?track=<?php echo $details['track']; ?>"><span class="badge" style="background-color:blue;padding:7px;">Location</span></a>
                               </div>
 
                             </td>

@@ -109,8 +109,9 @@ function generateRandomFACCode($num)
                                 $track = $_GET['track'];
                                 $status = $_POST['status'];
                                 $description = $_POST['description'];
+                                $date = $_POST['date'];
 
-                                $query = mysqli_query($connection, "INSERT INTO `issues`(`description`, `track`,`status`) VALUES ('$description','$track','$status')");
+                                $query = mysqli_query($connection, "INSERT INTO `issues`(`description`, `track`,`status`,`date`) VALUES ('$description','$track','$status', '$date')");
 
                                 if ($query) {
 
@@ -131,12 +132,16 @@ function generateRandomFACCode($num)
                                     <label for="status" class="form-label">Status</label>
                                     <select name="status" id="status">
                                         <option value="pending">Pending</option>
-                                        <option value="resolve">Resolve</option>
+                                        <option value="resolved">Resolve</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
                                     <label for="inputEmail4" class="form-label">Desription</label>
                                     <input type="text" name="description" class="form-control" id="inputEmail4" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="input5" class="form-label">Date</label>
+                                    <input type="date" name="date" class="form-control" id="input5" >
                                 </div>
 
                                 <div class="">
