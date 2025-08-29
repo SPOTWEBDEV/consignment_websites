@@ -51,8 +51,39 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
 
     <style>
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
 
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
 
+        ul.timeline>li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul.timeline>li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
     </style>
 </head>
 
@@ -468,80 +499,43 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
 
 
-                        <h2 class="table-title">shippment History</h2>
-                        <table class="table">
+                        <h2 class="table-title">Shipment History</h2>
 
-
-
-                            <thead>
-                                <tr>
-
-                                    <!--<th scope="col" class="px-6 py-3">Tracking Number</th>-->
-                                <tr>
-                                    <th scope="col" class="px-6 py-3">Location</th>
-                                    <th scope="col" class="px-6 py-3">Stage</th>
-                                    <th scope="col" class="px-6 py-3">Status</th>
-                                </tr>
-
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-
-
-
-                                <?php
-
-                                $track = $_GET['track'];
-                                $sql = mysqli_query($connection, "SELECT * FROM `stages` WHERE `track`='$track'");
-
-                                while ($message = mysqli_fetch_assoc($sql)) { ?>
-
-
-                                    <tr>
-                                        <td class="dont" data-label="Location"><?php echo $message['country'];  ?></td>
-                                        <td class="dont" data-label="Date"><?php echo $message['status']; ?></td>
-
+                        <div class="mt-5 mb-5">
+                            <div class="row">
+                                <div class="col-md-12 offset-md-12">
+                                    <ul class="timeline">
                                         <?php
+                                        $track = $_GET['track'];
+                                        $sql = mysqli_query($connection, "SELECT * FROM `stages` WHERE `track`='$track' ORDER BY date DESC");
 
-
-                                        if ($message['status'] == 'previouse') { ?>
-
-
-                                            <td class="dont" data-label="Previouse-Location:" id="return">
-                                                <div class="last"><?php echo $message['country']; ?></div>
-                                                <div class="blink red" style="background:red"></div>
-                                            </td>
-
-
-                                        <?php  }
-
-                                        if ($message['status'] == 'current') { ?>
-
-
-                                            <td class="dont" data-label="Current-Location" id="return">
-                                                <div class="last"><?php echo $message['country']; ?></div>
-                                                <div class="blink green" style="background:green"></div>
-                                            </td>
-
-
-                                        <?php  }
-
+                                        while ($message = mysqli_fetch_assoc($sql)) {
+                                            $statusClass = $message['status'] == 'current' ? 'text-success' : 'text-danger';
                                         ?>
-                                    </tr>
+
+                                            <li>
+                                                <!-- Status (Current / Previous) -->
+                                                <a href="#" class="<?php echo $statusClass; ?>">
+                                                    <?php echo ucfirst($message['status']); ?>
+                                                </a>
+
+                                                <!-- Date on the right -->
+                                                <a href="#" class="float-right">
+                                                    <?php echo date("F j, Y", strtotime($message['date'])); ?>
+                                                </a>
+
+                                                <!-- Location -->
+                                                <p>
+                                                    <strong>Location:</strong> <?php echo $message['country']; ?>
+                                                </p>
+                                            </li>
+                                        <?php } ?>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
 
-                                <?php  }
-
-
-                                ?>
-
-                            </tbody>
-
-
-
-                        </table>
 
                         <h2 class="table-title">Issues</h2>
                         <table class="table">
@@ -550,6 +544,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
                                     <th scope="col" class="px-6 py-3">Description</th>
 
                                     <th scope="col" class="px-6 py-3">Status</th>
+                                    <th scope="col" class="px-6 py-3">Date</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -563,10 +558,22 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
 
 
                                     <tr>
-                                        <td data-label="Description"><?php echo $message['description'];  ?></td>
-                                        <td data-label="Status" id="return">
-                                            <button class="status <?php echo ($message['status'] == 'pending') ? 'red' : 'green'  ?>"><?php echo $message['status'];  ?></button>
+                                        <td data-label="Description">
+
+                                            <?php echo $message['description'];  ?>
+
+                                            <?php if ($message['status'] === 'pending') { ?>
+
+                                                <br> <a style="color:#22c0e8;;text-decoration:underline">Chat live support <br> using the live support button on the page </a>
                                         </td>
+
+                                    <?php }  ?>
+
+
+                                    <td data-label="Status" id="return">
+                                        <button style="background:<?php echo ($message['status'] == 'pending') ? 'red' : '#16C47F'  ?>" class="status "><?php echo $message['status'];  ?></button>
+                                    </td>
+                                    <td data-label="Date"><?php echo $message['date'];  ?></td>
                                     </tr>
 
 
