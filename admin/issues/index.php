@@ -93,71 +93,145 @@ function generateRandomFACCode($num)
             </nav>
         </div><!-- End Page Title -->
         <section class="section">
+
             <div class="row">
 
-
+                <!-- Card for Add Issue Form -->
                 <div class="col-lg-6">
-
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Shipent billoard</h5>
+                            <h5 class="card-title">Add Shipment Issue</h5>
 
                             <?php
-
+                            // Handle Add
                             if (isset($_POST['summit'])) {
-
                                 $track = $_GET['track'];
                                 $status = $_POST['status'];
                                 $description = $_POST['description'];
                                 $date = $_POST['date'];
 
                                 $query = mysqli_query($connection, "INSERT INTO `issues`(`description`, `track`,`status`,`date`) VALUES ('$description','$track','$status', '$date')");
-
                                 if ($query) {
-
-                                    echo "<script> location.href='../list/'  </script> ";
+                                    echo "<script> location.href='" . $_SERVER['PHP_SELF'] . "?track=$track' </script>";
                                 } else {
+                                    echo "<script> alert('Unable to add issue') </script>";
+                                }
+                            }
 
+                            // Handle Delete
+                            if (isset($_GET['delete'])) {
+                                $id = $_GET['delete'];
+                                $deleteQuery = mysqli_query($connection, "DELETE FROM `issues` WHERE id='$id'");
+                                if ($deleteQuery) {
+                                    echo "<script> location.href='" . $_SERVER['PHP_SELF'] . "?track=" . $_GET['track'] . "' </script>";
+                                } else {
+                                    echo "<script> alert('Unable to delete issue') </script>";
+                                }
+                            }
 
-                                    echo "<script> alert('UNABLE TO DELETE')  </script> ";
+                            // Handle Update
+                            if (isset($_POST['update'])) {
+                                $id = $_POST['id'];
+                                $status = $_POST['status'];
+                                $description = $_POST['description'];
+                                $date = $_POST['date'];
+
+                                $updateQuery = mysqli_query($connection, "UPDATE `issues` SET `status`='$status', `description`='$description', `date`='$date' WHERE id='$id'");
+                                if ($updateQuery) {
+                                    echo "<script> location.href='" . $_SERVER['PHP_SELF'] . "?track=" . $_GET['track'] . "' </script>";
+                                } else {
+                                    echo "<script> alert('Unable to update issue') </script>";
                                 }
                             }
                             ?>
 
-                            <!-- Vertical Form -->
+                            <!-- Add Issue Form -->
                             <form class="row g-3" method="POST">
-
-                                <!--sender information  -->
                                 <div class="col-12">
                                     <label for="status" class="form-label">Status</label>
-                                    <select name="status" id="status">
+                                    <select name="status" id="status" class="form-control">
                                         <option value="pending">Pending</option>
-                                        <option value="resolved">Resolve</option>
+                                        <option value="resolved">Resolved</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputEmail4" class="form-label">Desription</label>
-                                    <input type="text" name="description" class="form-control" id="inputEmail4" required>
+                                    <label for="description" class="form-label">Description</label>
+                                    <input type="text" name="description" class="form-control" required>
                                 </div>
                                 <div class="col-12">
-                                    <label for="input5" class="form-label">Date</label>
-                                    <input type="date" name="date" class="form-control" id="input5" >
+                                    <label for="date" class="form-label">Date</label>
+                                    <input type="date" name="date" class="form-control">
                                 </div>
-
-                                <div class="">
-
+                                <div>
                                     <button type="submit" name="summit" class="btn btn-primary">Submit</button>
-
                                 </div>
-                            </form><!-- Vertical Form -->
+                            </form><!-- End Form -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Issues Table -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">All Issues</h5>
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Track</th>
+                                        <th>Status</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $track = $_GET['track'] ?? '';
+                                    $issues = mysqli_query($connection, "SELECT * FROM `issues` WHERE track='$track' ORDER BY id DESC");
+                                    while ($row = mysqli_fetch_assoc($issues)) {
+                                        echo "<tr>
+                                <td>{$row['id']}</td>
+                                <td>{$row['track']}</td>
+                                <td>{$row['status']}</td>
+                                <td>{$row['description']}</td>
+                                <td>{$row['date']}</td>
+                                <td>
+                                    <button class='btn btn-sm btn-warning' onclick=\"document.getElementById('editForm{$row['id']}').style.display='block'\">Edit</button>
+                                    <a href='?track=$track&delete={$row['id']}' class='btn btn-sm btn-danger' onclick=\"return confirm('Are you sure?')\">Delete</a>
+                                    
+                                    <!-- Hidden Edit Form -->
+                                    <form method='POST' class='mt-2' style='display:none;' id='editForm{$row['id']}'>
+                                        <input type='hidden' name='id' value='{$row['id']}'>
+                                        <div class='mb-2'>
+                                            <select name='status' class='form-control'>
+                                                <option value='pending' " . ($row['status'] == "pending" ? "selected" : "") . ">Pending</option>
+                                                <option value='resolved' " . ($row['status'] == "resolved" ? "selected" : "") . ">Resolved</option>
+                                            </select>
+                                        </div>
+                                        <div class='mb-2'>
+                                            <input type='text' name='description' value='{$row['description']}' class='form-control'>
+                                        </div>
+                                        <div class='mb-2'>
+                                            <input type='date' name='date' value='{$row['date']}' class='form-control'>
+                                        </div>
+                                        <button type='submit' name='update' class='btn btn-success btn-sm'>Update</button>
+                                    </form>
+                                </td>
+                            </tr>";
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
 
                         </div>
                     </div>
-
-
-
                 </div>
+
             </div>
+
         </section>
 
     </main>
