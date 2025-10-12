@@ -365,7 +365,7 @@ if (isset($_GET['track']) && $_GET['track'] != "") {
                                     </tr>
                                     <tr>
                                         <td data-label="full-name">Shipping Date:</td>
-                                        <td data-label="full-name"> <?php echo $message['arrival_date'];  ?></td>
+                                        <td data-label="full-name"> <?php echo $message['shippment_date'];  ?></td>
                                     </tr>
                                     <tr>
                                         <td data-label="full-name">Expected Arrival Date:</td>
